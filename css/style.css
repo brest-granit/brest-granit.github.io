@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "midd";
+  src: url("/fonts/CeraPro-Medium.woff");
+}
+
 /*
 Free Html5 Responsive Templates : https://www.zerotheme.com/
 */
@@ -22,6 +27,7 @@ input, textarea, select {margin:0; padding:0px;}
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+	  font-family: midd !important;
 }
 ::-moz-selection{background: #FFE401 none repeat scroll 0 0;color: #000;text-shadow:none}
 ::selection{background: #FFE401 none repeat scroll 0 0;color: #000;text-shadow:none}
