@@ -1,487 +1,316 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+<!DOCTYPE html><html lang = 'ru'>
+    <head>
+        <title>TAIRGRANIT</title>
+        <link  rel='stylesheet' type='text/css' href='style/main.css'>
+        <link  rel='stylesheet' type='text/css' href='style/header.css'> 
+    </head>
+    <body>
+    <header>
+        <div class="headerTop">
+            <div class="headerLogoGroup">
+            <a href="#" class="headerLogoLogo"><img src="img/logologo2.svg"></a>
+            <a href="#" class="headerLogo"><img src="img/logo.svg"></a>
+        </div>
+            <div class="headerContacts">
+                <a class="headerLocation">
+                    <div class="headerContactsIconGeo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                </div>
+                     г.Брест, Волгоградская 19, пав.311, рынок Лагуна
+                </a>
+                <a class="headerPhone">
+                    <div class="headerContactsIconPhone"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                    </div>
+                     +375 (77) 777-77-77
+                </a>
+            </div>
+            <div class="headerSocial">
+                <a class="headerSocialINST" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a>
+                <a class="headerSocialVK" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="currentColor" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+                    </svg>
 
-    <!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>zFinanBox - Free Finance Html5 Templates</title>
-	<meta name="description" content="Free Responsive Html5 Css3 Templates | Zerotheme.com">
-	<meta name="author" content="www.zerotheme.com">
-	
-    <!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                </a>
+            </div>
+        </div>
+        <div class="headerBot">
+            <ul class="headerMenu">
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ПАМЯТНИКИ</a></li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ОГРАДЫ</a></li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">АКСЕССУАРЫ</a></li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ОФОРМЛЕНИЕ</a></li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ФОТО РАБОТ</a></li>
+                <li class="headerMenuItemWrap headerDropdownMenuItemWrap"><a href="#" class="headerMenuItemLink">УСЛУГИ</a>
+                    <ul class="headerDropdownList">
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">SubMenuItem</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">SubMenuItem</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">SubMenuItem</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mainBanner">
+        <div class="mainBannerContent">
+            <div class="mainBannerContentText">
+            <h1>Изготовление и установка памятников под ключ в Бресте и Брестской области</h1>
+            <h2>Недорогие гранитные памятники любой сложности</h2>
+            </div>
+            <img src="img/ang-shakal.png">
+        </div>
+    </div>
+
+    <div class="pageBlockName">МЫ ПРЕДЛАГАЕМ</div>
+    <div class="pageBlockSuggestions">
+        <div class="pageBlockSuggestionElements">
+                <div class="pageBlockSuggestionElement pageBlockSuggestionElement1">
+                    <div class="pageBlockSuggestionElementText">
+                        <h1>Гранитные памятники любой сложности</h1>
+                        <h2>Недорогие памятники с изготовленим под ключ, аксессуары и оформление, гарантия качества</h2>
+                    </div>
+                    <div class="pageBlockSuggestionsButton1"><a href="#">ПОДРОБНЕЕ</a></div>
+                </div>
+                <div class="pageBlockSuggestionElement pageBlockSuggestionElement2">
+                    <div class="pageBlockSuggestionElementText">
+                        <h1>Ограждения разных размеров</h1>
+                        <h2>Мы работаем с высоко-прочными материалами, которые долго сохраняют презентабельный вид</h2>
+                    </div>
+                    <div class="pageBlockSuggestionsButton2"><a href="#">ПОДРОБНЕЕ</a></div>
+                </div>
+                <div class="pageBlockSuggestionElement pageBlockSuggestionElement3">
+                    <div class="pageBlockSuggestionElement3Text">
+                        <h1>Благоустройство могил</h1>
+                        <h2>Выравнивание, поднятие участка, установка надгробия и похоронного монумента или статуи. Создание бетонного цоколя, основания, облицовка и засыпка</h2>
+                    </div>
+                    <div class="pageBlockSuggestionElement3Difference">
+                        <div class="pageBlockSuggestionElement3DifferenceElements"></div>
+                    </div>
+                    <div class="pageBlockSuggestionsButton3"><a href="#">ПОДРОБНЕЕ</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="pageBlockName">НАШИ ПРЕИМУЩЕСТВА</div>
+            <div class="pageBlockWhite">
+                <div class="pageBlockAdvantages">
+                    <div class="pageBlockAdvantagesElement1">
+                        <div class="pageBlockAdvantagesElementTitle">
+                            <div class="pageBlockAdvantagesElementLogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="currentColor" class="bi bi-house-gear-fill" viewBox="0 0 16 16">
+                                    <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5Z"/>
+                                    <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z"/>
+                                    <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/>
+                                  </svg>
+                            </div>
+                        <h1>Собственное производство</h1>
+                    </div> 
+                        <h2>Все работы выполняются под ключ с реальной гарантией как на камень, так и на качество установки памятника</h2>
+                    </div>
+                    <div class="pageBlockAdvantagesElement2">
+                        <div class="pageBlockAdvantagesElementTitle">
+                            <div class="pageBlockAdvantagesElementLogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="currentColor" viewBox="0 0 24 24"><path d="M23.873 9.81c.087-.251.127-.509.127-.764 0-.77-.38-1.514-1.055-1.981-2.153-1.492-1.868-1.117-2.679-3.543-.34-1.013-1.319-1.697-2.424-1.697h-.007c-2.653.009-2.193.151-4.334-1.354-.446-.314-.974-.471-1.501-.471s-1.055.157-1.502.471c-2.156 1.515-1.686 1.362-4.334 1.353h-.007c-1.104 0-2.084.685-2.422 1.697-.812 2.432-.534 2.056-2.678 3.544-.677.469-1.057 1.212-1.057 1.983 0 .254.042.511.127.762.831 2.428.829 1.962 0 4.38-.085.251-.127.507-.127.762 0 .77.38 1.514 1.057 1.983 2.146 1.49 1.868 1.113 2.679 3.543.338 1.013 1.317 1.697 2.422 1.697h.007c2.653-.009 2.193-.152 4.334 1.353.446.314.974.472 1.501.472s1.055-.158 1.502-.471c2.141-1.504 1.679-1.362 4.334-1.353h.007c1.104 0 2.084-.685 2.424-1.697.811-2.427.525-2.052 2.679-3.543.674-.469 1.054-1.213 1.054-1.983 0-.254-.04-.512-.127-.763-.831-2.428-.827-1.963 0-4.38zm-13.373 6.94l-4.5-4.364 1.858-1.857 2.642 2.505 5.642-5.783 1.858 1.857-7.5 7.642z"/></svg>
+                            </div>
+                        <h1>Гарантия качества</h1>
+                        </div>
+                        <h2>Индивидуальный подход к каждому заказу,  широкий ассортимент камня,  разно-образная цветовая палитра сырья</h2>
+                    </div>
+                    <div class="pageBlockAdvantagesElement3">
+                        <div class="pageBlockAdvantagesElementTitle">
+                            <div class="pageBlockAdvantagesElementLogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                                  </svg>
+                            </div>
+                        <h1>Высокий срок службы</h1>
+                        </div>
+                        <h2>Мы используем натуральный камень высшего качества, поэтому наши изделия отличаются высоким сроком службы и прочностью</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pageBlockPadding"></div>
+            <div class="pageBlockVTBBanner">
+                <div class="pageBlockVTBBannerText">
+                    <h1>Рассрочка</h1>
+                    <h2>Теперь вы можете воспользоваться картой рассрочки Черепаха, от банка ВТБ на 8 месяцев</h2>
+                    <h3>Звоните и получите подробную консультацию</h3>
+                </div>
+                <div class="pageBlockVTBBannerCard">
+                    <img src="img/cherepah.png">
+                </div>
+                <div class="pageBlockVTBBannerCardButton"><a href="#">СВЯЗАТЬСЯ С НАМИ</a></div>
+            </div>
+            <div class="pageBlockName">НАМ ДОВЕРЯЮТ</div>
+                <div class="pageBlockNameDown">
+                    <div class="pageBlockNameDownLine">
+                        <svg height="5" width="90">
+                        <line x1="0" y1="0" x2="90" y2="0" style="stroke:rgb(175, 175, 175);stroke-width:5" />
+                    </svg></div>
+                    <a>Мы качественно выполняем свою работу</a>
+                    <div class="pageBlockReview">
+                        <div class="pageBlockReviewElement1">
+                            <div class="pageBlockReviewElementTitle">
+                                <div class="pageBlockReviewElementLogo">
+                                    <img src="img/user.jpg">
+                                </div>
+                            <h1>Kaneki</h1>
+                            <div class="pageBlockReviewElementTitleCity">
+                                <h3>г.Брест</h3>
+                            </div>
+                        </div> 
+                            <h2>Спасибо, Ваши работники делают очень аккуратно, после них - практически ничего не надо убирать, а главное быстро хорошо и не дорого, на удивление редкость в Бресте, спасибо еще раз вам 🫶</h2>
+                        </div>
+                        <div class="pageBlockReviewElement2">
+                            <div class="pageBlockReviewElementTitle">
+                                <div class="pageBlockReviewElementLogo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" fill="var(--greygrey)" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                </div>
+                            <h1>Gosha</h1>
+                            <div class="pageBlockReviewElementTitleCity">
+                                <h3>г.Жабинки</h3>
+                            </div>
+                            </div>
+                            <h2>Добрый день,
+                                Спасибо вам, мне очень нравится, надеюсь и всем остальным родным понравится, спасибо Вам большое</h2>
+                        </div>
+                        <div class="pageBlockReviewElement3">
+                            <div class="pageBlockReviewElementTitle">
+                                <div class="pageBlockReviewElementLogo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" fill="var(--greygrey)" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                      </svg>
+                                </div>
+                            <h1>Pn ies</h1>
+                            <div class="pageBlockReviewElementTitleCity">
+                                <h3>д.Матюкалы</h3>
+                            </div>
+                            </div>
+                            <h2>Хороший гранит, давно не видел такого, еще с советский времен, мастер хороший, сделал хорошо, а главное денег не много с меня взял, не то, что другие. Услугами доволен, благодарю!</h2>
+                        </div>
     
-    <!-- CSS
-	================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsiveslides.css">
-	
-	<!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
-	
-	<link rel="stylesheet" href="css/menu.css">
-	<script src="js/jquery183.min.js"></script>
-	<script src="js/script.js"></script>
-	
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
-    <script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-		  // Slideshow 
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			  $('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-			  $('.events').append("<li>after event fired.</li>");
-			}
-		  });
-		});
-	</script>
-	
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/Items/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
-	<![endif]-->
-	
-</head>
-
-<body class="home-page">
-	<div class="wrap-body">
-		<header>
-			<div class="top-bar">
-				<div class="wrap-top zerogrid">
-					<div class="row">
-						<div class="col-2-3">
-							<ul class="list-inline">
-								<li class="mail"><span><i class="fa fa-envelope"></i> ContacUs@Gmail.com</span></li>
-								<li class="phone"><span><i class="fa fa-phone"></i>(9999) 123 888 7</span></li>
-								<li class="clock"><span><i class="fa fa-clock-o"></i>Mon - Sat | 7:00 - 17:00</span></li>
-							</ul>
-						</div>
-						<div class="col-1-3">
-							<ul class="list-inline top-social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="header-logo">
-				<a href="index.html"><img src="images/logo.png"></a>
-			</div>
-			<div id='cssmenu' >
-				<ul>
-				   <li class="active"><a href='index.html'><span>zFinanBox</span></a></li>
-				   <li class=' has-sub'><a href='#'><span>Category</span></a>
-					  <ul>
-						 <li class='has-sub'><a href='#'><span>Item 1</span></a>
-							<ul>
-							   <li><a href='#'><span>Sub Item</span></a></li>
-							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
-							</ul>
-						 </li>
-						 <li class='has-sub'><a href='#'><span>Item 2</span></a>
-							<ul>
-							   <li><a href='#'><span>Sub Item</span></a></li>
-							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
-							</ul>
-						 </li>
-					  </ul>
-				   </li>
-				   <li><a href='archive.html'><span>Archive</span></a></li>
-				   <li><a href='single.html'><span>About</span></a></li>
-				   <li class='last'><a href='contact.html'><span>Contact</span></a></li>
-				</ul>
-			</div>
-			<div class="slider">
-				<!-- Slideshow -->
-				<div class="callbacks_container">
-					<ul class="rslides" id="slider">
-						<li>
-							<img src="images/slideshow-image1.jpg" alt="">
-							<div class="caption">
-								<h1>SED UT PERSPICIATEIS UNDE OMNIS</h1>
-								<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <br>sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</span>
-							</div>
-						</li>
-						<li>
-							<img src="images/slideshow-image2.jpg" alt="">
-							<div class="caption">
-								<h1>TEMPORIBUS AUTEM QUIBUSDAM ET AUT</h1>
-								<span>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis <br> voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</span>
-							</div>
-						</li>
-						<li>
-							<img src="images/slideshow-image3.jpg" alt="">
-							<div class="caption">
-								<h1>AENEAN FEUGIAT IN ANTE</h1>
-								<span >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy</span>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</header>
-		<!--////////////////////////////////////Container-->
-		<section id="container">
-			<div class="wrap-container">
-				<!-----------------content-box-1-------------------->
-				<section class="content-box box-1">
-					<div class="zerogrid">
-						<div class="row wrap-box"><!--Start Box-->
-							<div class="col-1-3">
-								<div class="wrap-col">
-									<div class="box-item">
-										<img src="images/1.jpg">
-										<h2>Text Heading</h2>
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-										<a href="single.html">Read More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-1-3">
-								<div class="wrap-col">
-									<div class="box-item">
-										<img src="images/2.jpg">
-										<h2>Text Heading</h2>
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-										<a href="single.html">Read More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-1-3">
-								<div class="wrap-col">
-									<div class="box-item">
-										<img src="images/3.jpg">
-										<h2>Text Heading</h2>
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-										<a href="single.html">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-----------------content-box-2-------------------->
-				<section class="content-box boxstyle-1 box-2">
-					<div class="zerogrid">
-						<div class="row wrap-box"><!--Start Box-->
-							<div class="box-item">
-								<blockquote><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p></blockquote>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-----------------content-box-3-------------------->
-				<section class="content-box box-3">
-					<div class="zerogrid">
-						<div class="row wrap-box"><!--Start Box-->
-							<div class="header">
-								<div class="wrapper">
-									<h2>COURSES</h2>
-									<hr class="line">
-									<div class="intro">Explore all the</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-1-4">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/feature-icon-1.png" />
-											</div>
-											<div class="box-item-content">
-												<h3>BASIC FURNITURE</h3>
-												<p>We have step by step tutorials & instructions</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-4">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/feature-icon-2.png" />
-											</div>
-											<div class="box-item-content">
-												<h3>BASIC FURNITURE</h3>
-												<p>We have step by step tutorials & instructions</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-4">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/feature-icon-3.png" />
-											</div>
-											<div class="box-item-content">
-												<h3>BASIC FURNITURE</h3>
-												<p>We have step by step tutorials & instructions</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-4">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/feature-icon-4.png" />
-											</div>
-											<div class="box-item-content">
-												<h3>BASIC FURNITURE</h3>
-												<p>We have step by step tutorials & instructions</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-----------------content-box-4-------------------->
-				<section class="content-box boxstyle-2 box-4">
-					<div class="zerogrid">
-						<div class="row wrap-box"><!--Start Box-->
-							<div class="header">
-								<div class="wrapper">
-								<h2>BLOG</h2>
-								<hr class="line">
-									<div class="intro">Explore all the</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-1-3">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/1.jpg" />
-											</div>
-											<div class="box-item-content">
-												<h4>LOREM IPSUM DOLOR</h4>
-												<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-												<a href="single.html">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-3">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/2.jpg" />
-											</div>
-											<div class="box-item-content">
-												<h4>LOREM IPSUM DOLOR</h4>
-												<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-												<a href="single.html">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-3">
-									<div class="wrap-col">
-										<div class="box-item">
-											<div class="zoom-container">
-												<img src="images/3.jpg" />
-											</div>
-											<div class="box-item-content">
-												<h4>LOREM IPSUM DOLOR</h4>
-												<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. Et vel quod legimus, graeci electram ocurrere.</p>
-												<a href="single.html">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				
-				<!-----------------content-box-6-------------------->
-				<section class="content-box box-6">
-					<div class="zerogrid" style="width: 100%;">
-						<div class="row wrap-box"><!--Start Box-->
-							<div class="col-1-2">
-								<div class="portfolio-box">
-									<img src="images/8.jpg" class="img-responsive" alt="">
-									<div class="portfolio-box-caption">
-										<div class="portfolio-box-caption-content">
-											<div class="project-name">
-												<a href="single.html">Project Name</a>
-											</div>
-											<div class="project-des">
-												<p>Suspendisse eu ligula. Sed consequat, leo eget bibendum sodales.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-1-2">
-								<div class="portfolio-box">
-									<img src="images/9.jpg" class="img-responsive" alt="">
-									<div class="portfolio-box-caption">
-										<div class="portfolio-box-caption-content">
-											<div class="project-name">
-												<a href="single.html">Project Name</a>
-											</div>
-											<div class="project-des">
-												<p>Suspendisse eu ligula. Sed consequat, leo eget bibendum sodales.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-			</div>
-		</section>
-		<!--////////////////////////////////////Footer-->
-		<footer>
-			<div class="top-footer">
-				<div id="owl-brand" class="owl-carousel">
-					<div class="item">
-						<a href="single.html"><img src="images/15.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/16.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/17.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/18.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/19.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/20.jpg" /></a>
-					</div>
-					<div class="item">
-						<a href="single.html"><img src="images/21.jpg" /></a>
-					</div>
-				</div>
-			</div>
-			<div class="zerogrid wrap-footer">
-				<div class="row">
-					<div class="col-1-4 col-footer-1">
-						<div class="wrap-col">
-							<h3 class="widget-title">About Us</h3>
-							<p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Condimentum fermentum gravida, metus elit vehicula dui. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum</p>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium</p>
-						</div>
-					</div>
-					<div class="col-1-4 col-footer-2">
-						<div class="wrap-col">
-							<h3 class="widget-title">Recent Post</h3>
-							<ul>
-								<li><a href="#">MOST VISITED COUNTRIES</a></li>
-								<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
-								<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
-								<li><a href="#">STARTUP COMPANY???S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-1-4 col-footer-3">
-						<div class="wrap-col">
-							<h3 class="widget-title">Tag Cloud</h3>
-							<a href="#">animals</a>
-							<a href="#">cooking</a>
-							<a href="#">countries</a>
-							<a href="#">city</a>
-							<a href="#">children</a>
-							<a href="#">home</a>
-							<a href="#">likes</a>
-							<a href="#">photo</a>
-							<a href="#">link</a>
-							<a href="#">law</a>
-							<a href="#">shopping</a>
-							<a href="#">skate</a>
-							<a href="#">scholl</a>
-							<a href="#">video</a>
-							<a href="#">travel</a>
-							<a href="#">images</a>
-							<a href="#">love</a>
-							<a href="#">lists</a>
-							<a href="#">makeup</a>
-							<a href="#">media</a>
-							<a href="#">password</a>
-							<a href="#">pagination</a>
-							<a href="#">wildlife</a>
-						</div>
-					</div>
-					<div class="col-1-4 col-footer-4">
-						<div class="wrap-col">
-							<h3 class="widget-title">Subcribe</h3>
-							<p>Never missed any post published in our site. Subscribe to our daly newsletter now.</p>
-							<p>Email address:</p>
-							<form action="#" method="post">
-								<input type="text" name="your-name" value="" size="40" placeholder="Your Email" />
-								<input type="submit" value="SUBSCRIBE" class="button button-subcribe" />
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copyright">
-				<div class="zerogrid wrapper">
-					Copyright @ zFinanBox - Designed by <a href="https://www.zerotheme.com">ZEROTHEME</a>
-					<ul class="quick-link">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
-	
-	<!-- carousel -->
-	<script src="owl-carousel/owl.carousel.js"></script>
-    <script>
-    $(document).ready(function() {
-      $("#owl-brand").owlCarousel({
-        autoPlay: 3000,
-        items : 6,
-		itemsDesktop : [1199,4],
-        itemsDesktopSmall : [979,2],
-		navigation: true,
-		navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
-		pagination: false
-      });
-    });
-    </script>
+                    </div>
+            </div>
+            <div class="pageBlockName">НАШИ РАБОТЫ</div>
+            <div class="pageBlockOurWorks">
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo1.jpg">
+                </a>
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo2.jpg">
+                </a>                
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo3.jpg">
+                </a>                
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo4.jpg">
+                </a>                
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo5.jpg">
+                </a>                
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo6.jpg">
+                </a>                
+                <a class="pageBlockOurWorksImageContainer">
+                    <img src="img/photo7.jpg">
+                </a>
+                <a href="#" class="pageBlockOurWorksImageContainer">
+                    <div class="pageBlockOurWorksBlockButton">Больше наших работ</div>
+                </a>
+            </div>
+            <div class="pageBlockName">СВЯЖИТЕСЬ С НАМИ</div>
+            <div class="pageBlockNameDown">
+                <div class="pageBlockNameDownLine">
+                    <svg height="5" width="90">
+                    <line x1="0" y1="0" x2="90" y2="0" style="stroke:rgb(175, 175, 175);stroke-width:5" />
+                  </svg></div>
+                <a>TAIRGRANIT.BY</a>
+            </div>
+            <div class="pageBlockLocation">
+                <div class="pageBlockLocationMap"> </div>
+                <div class="pageBlockLocationContacts"> 
+                    <div class="pageBlockLocationContantsTitle">
+                        <div class="pageBlockLocationContantsLogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                              </svg>
+                        </div>
+                        <h1>Адрес</h1>
+                        <h2>ул. Волгоградская 19 пав. 311, рынок Лагуна</h2>
+                    </div>
+                    <div class="pageBlockLocationContantsTitle">
+                        <div class="pageBlockLocationContantsLogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>  
+                        </div>
+                        <h1>Телефон</h1>
+                        <h2>+375 (77) 777-77-77</h2>
+                    </div>
+                    <div class="pageBlockLocationContantsTitle">
+                        <div class="pageBlockLocationContantsLogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                              </svg>  
+                        </div>
+                        <h1>Instagram</h1>
+                        <h2>@TAIRGRANIT</h2>
+                    </div>
+                    <div class="pageBlockLocationContantsTitle">
+                        <div class="pageBlockLocationContantsLogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="White" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+                            </svg>   
+                        </div>
+                        <h1>ВКонтакте</h1>
+                        <h2>@TAIRGRANIT</h2>
+                    </div>
+                </div>
+            </div>
+                <div class="pageBlockUpperFooter">
+                    <div class="pageBlockUpperFooterTime">
+                        <div class="pageBlockUpperFooterTimeTitle">
+                            <div class="pageBlockUpperFooterTimeTitleLogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar2-week-fill" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                                  </svg>
+                            </div> 
+                            <div class="pageBlockUpperFooterTimeTitleText">
+                                <h1>Время работы</h1>
+                            </div>
+                        </div> 
+                            
+                            <div class="pageBlockUpperFooterTimeTitleElement">
+                            <h2>ВТ-СБ</h2> 
+                            <h2>10.00 - 18.00 </h2> 
+                        </div>
+                        <div class="pageBlockUpperFooterTimeTitleElement">
+                            <h1> ВС</h1> 
+                            <h1>11.00 - 14.00 </h1> 
+                        </div>
+                        <div class="pageBlockUpperFooterTimeTitleElement">
+                            <h2>обед</h2> 
+                            <h2>13.00 - 13.30</h2> 
+                        </div> 
+                        <div class="pageBlockUpperFooterTimeTitleElement">
+                            <h1>ПН</h1> 
+                            <h1>ВЫХОДНОЙ</h1> 
+                        </div>
+                        </div>
+                    </div>
+                </div>
 </body>
+<footer>
+    <p>© Copyright - Все права защищены TAIRGRANIT.BY</p>
+</footer>
 </html>
