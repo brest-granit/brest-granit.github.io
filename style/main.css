@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "blackk";
+    src: url("CeraPro-Black.woff");
+  }
+@font-face {
+    font-family: "boldd";
+    src: url("CeraPro-Bold.woff");
+  }
+  @font-face {
+    font-family: "medd";
+    src: url("CeraPro-Medium.woff");
+  }
+  @font-face {
+    font-family: "regg";
+    src: url("CeraPro-Regular.woff");
+  }
+:root{
+    --white:#FFFFFF;
+    --grey:#F4F6FC;
+    --darkgrey:#EBEBEB;
+    --greygrey:#979797;
+    --almostblack:#353535;
+    --bgcolor:#F2F2F2;
+    --skyblue:#007BFB;
+    --lightskyblue:#3898ff;
+    --darkskyblue:#0067d4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: regg;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
