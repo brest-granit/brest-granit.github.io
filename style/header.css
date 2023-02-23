@@ -608,7 +608,7 @@
 .pageBlockOurWorks {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(21, 5vw);
+    grid-template-rows: repeat(21, 6vw);
     grid-gap: 15px;
     max-width: 1200px;
     margin: auto;
@@ -964,12 +964,12 @@
     height: 250px;
     background-color: white;
     border-radius: 45px 45px 0px 0px;
+    display: flex;
 }
 
 .pageBlockUpperFooterTime{
-    width: 196px;
-    padding-top: 40px;
-    margin-left: 1400px;
+    min-width: 196px;
+    margin: auto;
 }
 
 .pageBlockUpperFooterTimeTitle{
@@ -1020,4 +1020,51 @@ footer p{
     font-size: 19px;
     font-family: "medd";
 }
+
+.pageBlockUpperFooterSiteMap{
+    display: flex;
+    margin: auto;
+}
+
+.pageBlockUpperFooterSiteMapElement{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 36px;
+    min-width: 135px;
+}
+
+.pageBlockUpperFooterContent{
+    display: flex;
+    margin: auto;
+    width: 1250px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
