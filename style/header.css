@@ -169,14 +169,17 @@
 }
 
 .mainBannerContent h1 {
-    font-family: 'medd';
+    font-family: 'boldd';
     font-size: 47px;
     line-height: 52px;
     margin-bottom: 49px;
+    letter-spacing: -1px;
 }
 
 .mainBannerContent h2 {
     font-size: 25px;
+    font-family: 'medd';
+    letter-spacing: -1px;
 }
 
 .mainBannerContent img {
@@ -218,6 +221,7 @@
 
 .pageBlockSuggestionElements{
     display: flex;
+    margin-bottom: 20px;
 }
 
 .pageBlockSuggestionElement{
@@ -232,6 +236,7 @@
     background-position-y: 60px;
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-right: 20px;
 }    
 
 .pageBlockSuggestionElement2{
@@ -269,24 +274,26 @@
     border-radius: 14px;
 }
 
-.pageBlockSuggestionElementText h1{
-    font-family: 'medd';
+.pageBlockSuggestionElementText{
+    padding: 30px 40px;
+}
+
+.pageBlockSuggestionElementText h1 {
+    font-family: 'boldd';
     font-size: 38px;
-    margin-bottom: 12px;
-    margin-top: 28px;
-    padding: 0px 37px;
+    margin-bottom: 15px;
     line-height: 110%;
 }
 
 .pageBlockSuggestionElementText h2{
     font-size: 22px;
-    padding: 0px 37px;
-    margin-bottom: 22px;
+    font-family: 'medd';
+    margin-bottom: 20px;
     max-width: 320px;
 }
 
 .pageBlockSuggestionElement3Text h1{
-    font-family: 'medd';
+    font-family: 'boldd';
     font-size: 38px;
     margin-bottom: 23px;
     margin-top: 5px;
@@ -294,6 +301,8 @@
 
 .pageBlockSuggestionElement3Text h2{
     font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'medd';
 }
 
 .pageBlockSuggestionsButton{
@@ -306,7 +315,6 @@
     width: fit-content;
     padding: 15px 25px;
     display: block;
-    margin-top: 20px;
 }
 
 .pageBlockSuggestionsButton:hover{
@@ -356,6 +364,7 @@
     display: flex;
     margin: auto;
     padding: 6px 0px;
+    font-family: 'medd';
     }
     
 .pageBlockAdvantagesElement2 { 
@@ -387,6 +396,7 @@
     display: flex;
     margin: auto;
     padding: 6px 0px;
+    font-family: 'medd';
     }
 
 .pageBlockAdvantagesElement3 { 
@@ -408,12 +418,13 @@
 .pageBlockAdvantagesElement3 h2{
     font-size: 23px;
     text-align: justify;
-    max-width: 320px;
-    min-width: 320px;
+    max-width: 335px;
+    min-width: 335px;
     line-height: 110%;
     display: flex;
     margin: auto;
     padding: 6px 0px;
+    font-family: 'medd';
     }
 
 .pageBlockAdvantagesElementLogo{
@@ -444,7 +455,7 @@
 
 .pageBlockVTBBanner:hover{
     transform: scale(1.0125) translateY(-10px);
-    box-shadow: 0 15px 25px 5px rgba(0,0,0,.15);
+    box-shadow: 0 18px 28px 8px rgba(0, 0, 0, 0.062);
 }
 
 .pageBlockVTBBannerText {
@@ -463,17 +474,20 @@
 
 .pageBlockVTBBannerText h2{
     font-size: 27px;
-    font-family: 'regg';
+    font-family: 'medd';
     max-width: 530px;
+    margin-bottom: 30px;
 }
 
 .pageBlockVTBBannerText h3{
-    margin-top: 127px;
+    margin-top: 25px;
     color: var(--almostblack);
+    font-family: 'medd';
 }
 
 .pageBlockVTBBannerCard{
     padding: 97px 0px;
+    overflow: hidden;
 }
 
 .pageBlockVTBBannerCard img{
@@ -481,32 +495,6 @@
     width: 500px;
     transition: 0.635s ease-in-out;
     transition-delay: 0.135s;
-}
-
-.pageBlockVTBBannerCardButton a{
-    color: var(--white);
-    font-size: 22px;
-    font-family: 'boldd';
-}
-
-.pageBlockVTBBannerCardButton{
-    background-color: var(--skyblue);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.15s ease-in-out;
-    margin: 115px;
-    width: fit-content;
-    padding: 15px 25px;
-    position: absolute;
-    margin-top: 321px;
-}
-
-.pageBlockVTBBannerCardButton:hover{
-    border-radius: 10px;
-    background-color: var(--darkskyblue);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .pageBlockOurWorks {
@@ -717,6 +705,7 @@
     border-radius: 20px;
     margin: 12px 0px 0px 0px;
     text-align: justify;
+    font-family: 'medd';
     }
     
 .pageBlockReviewElement2 { 
@@ -745,6 +734,7 @@
     border-radius: 20px;
     margin: 12px 0px 0px 0px;
     text-align: justify;
+    font-family: 'medd';
     }
 
 .pageBlockReviewElement3 { 
@@ -774,6 +764,7 @@
     border-radius: 20px;
     margin: 12px 0px 0px 0px;
     text-align: justify;
+    font-family: 'medd';
     }
 
 .pageBlockReviewElementLogo{
@@ -809,7 +800,7 @@
 
 .pageBlockReviewElementTitleCity h3{
     font-size: 21px;
-    font-family: 'regg';
+    font-family: 'medd';
     color: var(--greygrey);
     padding: 12px 0px 0px 0px;
 }
@@ -855,6 +846,7 @@
     max-width: 185px;
     min-width: 170px;
     margin-left: 28px;
+    font-family: 'medd';
     /* text-align: center; */
 }
 
