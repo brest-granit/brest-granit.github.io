@@ -217,81 +217,49 @@
 }
 
 .pageBlockSuggestionElements{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    /* overflow: hidden; */
+    display: flex;
 }
 
 .pageBlockSuggestionElement{
     background-color: var(--white);
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    height: 350px;
-}
-
-.pageBlockSuggestionElementText{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .pageBlockSuggestionElement1{
-    grid-area: 1 / 1 / 2 / 2;
     background-image: url(../img/gravestone.png);
-    background-position-x: 200px;
-    background-position-y: 85px;
+    background-position-x: 170px;
+    background-position-y: 60px;
     background-repeat: no-repeat;
-    background-size: 90%;
-    display: flex;
-    flex-direction: column;
-    /* min-width: 573px; */
+    background-size: 100%;
 }    
 
-
-
 .pageBlockSuggestionElement2{
-    grid-area: 1 / 2 / 2 / 3;
     background-image: url(../img/ogrady.png);
-    background-position-x: 335px;
-    background-position-y: 108px;
+    background-position-x: 298px;
+    background-position-y: 75px;
     background-repeat: no-repeat;
-    background-size: 40%;
-    /* min-width: 573px; */
-    display: flex;
-    flex-direction: column;
+    background-size: 50%;
 }
 
 .pageBlockSuggestionElement3{
-    grid-area: 2 / 1 / 3 / 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    overflow: hidden;
-}
-
-.pageBlockSuggestionElement3Content{
-    display: flex;
-    justify-content: space-between;
-    width: 1175px;
 }
 
 .pageBlockSuggestionElement3Text{
+    grid-area: 1 / 1 / 2 / 3;
+    width: 45%;
     padding: 27px 37px;
-    display: flex;
-    flex-direction: column;
-    min-width: 387px;
 }
 
 .pageBlockSuggestionElement3Difference{
-    width: 50%;
-    /* height: 100%; */
-    display: flex;
-    /* grid-area: 1 / 2 / 2 / 3; */
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .pageBlockSuggestionElement3DifferenceElements{
@@ -314,104 +282,37 @@
     font-size: 22px;
     padding: 0px 37px;
     margin-bottom: 22px;
-    text-align: justify;
-    max-width: 290px;
+    max-width: 320px;
 }
 
-/* .pageBlockSuggestionElement3Text h1{
-    grid-area: 1 / 1 / 2 / 3;
-    width: 45%;
-    padding: 18px 0px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 73px;
-} */
 .pageBlockSuggestionElement3Text h1{
     font-family: 'medd';
     font-size: 38px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    line-height: 110%;
+    margin-bottom: 23px;
+    margin-top: 5px;
 }
 
 .pageBlockSuggestionElement3Text h2{
     font-size: 24px;
-    text-align: justify;
-    max-width: 515px;
 }
 
-.pageBlockSuggestionsButton1{
-    background-color: var(--skyblue);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.15s ease-in-out;
-    margin: 0px 35px;
-    width: fit-content;
-    padding: 15px 25px;
-}
-
-.pageBlockSuggestionsButton1:hover{
-    border-radius: 10px;
-    background-color: var(--darkskyblue);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
-
-.pageBlockSuggestionsButton1 a{
+.pageBlockSuggestionsButton{
     color: var(--white);
     font-size: 22px;
     font-family: 'boldd';
-}
-
-.pageBlockSuggestionsButton2{
     background-color: var(--skyblue);
     border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 0.15s ease-in-out;
-    margin: 2px 36px;
     width: fit-content;
     padding: 15px 25px;
+    display: block;
+    margin-top: 20px;
 }
 
-.pageBlockSuggestionsButton2:hover{
+.pageBlockSuggestionsButton:hover{
     border-radius: 10px;
     background-color: var(--darkskyblue);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
-
-.pageBlockSuggestionsButton2 a{
-    color: var(--white);
-    font-size: 22px;
-    font-family: 'boldd';
-}
-
-.pageBlockSuggestionsButton3{
-    background-color: var(--skyblue);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.15s ease-in-out;
-    /* margin: 35px; */
-    width: fit-content;
-    padding: 15px 25px;
-    /* position: absolute; */
-    margin-top: 32px;
-}
-
-.pageBlockSuggestionsButton3:hover{
-    border-radius: 10px;
-    background-color: var(--darkskyblue);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
-
-.pageBlockSuggestionsButton3 a{
-    color: var(--white);
-    font-size: 22px;
-    font-family: 'boldd';
 }
 
 .pageBlockWhite {
@@ -534,14 +435,22 @@
     margin: auto;
     max-width: 1324px;
     border-radius: 30px;
+    transition: .35s ease-in-out;
+}
+
+.pageBlockVTBBanner:hover img{
+    transform: rotate(360deg);
+}
+
+.pageBlockVTBBanner:hover{
+    transform: scale(1.0125) translateY(-10px);
+    box-shadow: 0 15px 25px 5px rgba(0,0,0,.15);
 }
 
 .pageBlockVTBBannerText {
     margin-left: 115px;
     margin-right: 72px;
     padding: 80px 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 .pageBlockVTBBannerText h1{
@@ -556,24 +465,22 @@
     font-size: 27px;
     font-family: 'regg';
     max-width: 530px;
-    min-width: 530px;
 }
 
 .pageBlockVTBBannerText h3{
-    margin-top: 26px;
+    margin-top: 127px;
     color: var(--almostblack);
 }
 
 .pageBlockVTBBannerCard{
     padding: 97px 0px;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
 }
 
 .pageBlockVTBBannerCard img{
     transform: rotate(353deg);
     width: 500px;
+    transition: 0.635s ease-in-out;
+    transition-delay: 0.135s;
 }
 
 .pageBlockVTBBannerCardButton a{
@@ -589,9 +496,11 @@
     align-items: center;
     justify-content: center;
     transition: 0.15s ease-in-out;
+    margin: 115px;
     width: fit-content;
     padding: 15px 25px;
-    margin-top: 30px;
+    position: absolute;
+    margin-top: 321px;
 }
 
 .pageBlockVTBBannerCardButton:hover{
