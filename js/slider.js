@@ -40,4 +40,11 @@ window.addEventListener('DOMContentLoaded', function()
         x = x - window.pageXOffset;
         return x;
     }
+
+    setTimeout(function()
+    { 
+       img1.style.backgroundSize = img.style.backgroundSize = `${imgContainer.offsetWidth}px ${imgContainer.offsetHeight + 50}px`
+    }, 
+    200);
+
 })
