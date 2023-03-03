@@ -1,18 +1,18 @@
 @font-face {
     font-family: "blackk";
-    src: url("CeraPro-Black.woff");
+    src: url("../fonts/CeraPro-Black.woff");
   }
 @font-face {
     font-family: "boldd";
-    src: url("CeraPro-Bold.woff");
+    src: url("../fonts/CeraPro-Bold.woff");
   }
   @font-face {
     font-family: "medd";
-    src: url("CeraPro-Medium.woff");
+    src: url("../fonts/CeraPro-Medium.woff");
   }
   @font-face {
     font-family: "regg";
-    src: url("CeraPro-Regular.woff");
+    src: url("../fonts/CeraPro-Regular.woff");
   }
 :root{
     --white:#FFFFFF;
