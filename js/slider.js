@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', function()
     img.className = 'mainImage';
     img.style.backgroundImage = "url(./img/sky2.jpg)"
     img1.style.backgroundSize = img.style.backgroundSize = `${imgContainer.offsetWidth}px ${imgContainer.offsetHeight}px`
+    img.style.width = "50%"
     imgContainer.appendChild(img);
 
     img.innerHTML = `<div class ='slider'><div class = 'circle'></div></div>`
