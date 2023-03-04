@@ -311,7 +311,7 @@
     border-radius: 15px;
     transition: 0.15s ease-in-out;
     /* width: fit-content; */
-    width: min-content;
+    width: max-content;
     padding: 15px 25px;
     display: block;
 }
