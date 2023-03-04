@@ -276,10 +276,9 @@
 
 .pageBlockSuggestionElementText h1 {
     font-family: 'boldd';
-    font-size: 36px;
+    font-size: 35px;
     margin-bottom: 15px;
     line-height: 105%;
-    min-width: 410px
 }
 
 .pageBlockSuggestionElementText h2{
@@ -315,6 +314,7 @@
     width: max-content;
     padding: 15px 25px;
     display: block;
+    white-space: nowrap;
 }
 
 .pageBlockSuggestionsButton:hover{
@@ -332,9 +332,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 15px;
     grid-row-gap: 0px;
-    max-width: 1200px;
+    max-width: 1050px;
     margin: auto;
     overflow: hidden;
 }
@@ -356,9 +356,9 @@
 }
 
 .pageBlockAdvantagesElement1 h2{
-    font-size: 21px;
-    max-width: 295px;
-    min-width: 295px;
+    font-size: 19px;
+    max-width: 270px;
+    min-width: 270px;
     text-align: justify;
     line-height: 110%;
     display: flex;
@@ -388,9 +388,9 @@
 }
 
 .pageBlockAdvantagesElement2 h2{
-    font-size: 21px;
-    max-width: 295px;
-    min-width: 295px;
+    font-size: 19px;
+    max-width: 270px;
+    min-width: 270px;
     text-align: justify;
     line-height: 110%;
     display: flex;
@@ -416,10 +416,10 @@
 }
 
 .pageBlockAdvantagesElement3 h2{
-    font-size: 21px;
     text-align: justify;
-    max-width: 295px;
-    min-width: 295px;
+    font-size: 19px;
+    max-width: 270px;
+    min-width: 270px;
     line-height: 110%;
     display: flex;
     margin: auto;
@@ -437,7 +437,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    width: 100%;
+    width: 290px;
 }
 
 .pageBlockVTBBanner{
@@ -945,3 +945,30 @@ footer p{
     padding-right: 122px;
     max-height: 115px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
