@@ -108,6 +108,7 @@
     font-family: medd;
     font-size: 19px;
     color: rgb(50, 50, 50);
+    white-space: nowrap;
 }
 
 .headerMenuItemWrap{
@@ -165,14 +166,15 @@
 }
 
 .mainBannerContentText {
-    margin-top: 170px;
+    margin-top: 165px;
+    padding: 0px 20px;
 }
 
 .mainBannerContent h2 {
     font-family: 'boldd';
     font-size: 43px;
     line-height: 52px;
-    margin-bottom: 49px;
+    margin-bottom: 44px;
     letter-spacing: -1px;
 }
 
@@ -331,7 +333,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     grid-row-gap: 0px;
     max-width: 1200px;
     margin: auto;
@@ -341,12 +343,12 @@
 .pageBlockAdvantagesElement1 { 
     grid-area: 1 / 1 / 2 / 2;
     padding: 25px 0px;
-    max-width: 340px;
+    max-width: 310px;
     margin: auto;
 }
 
 .pageBlockAdvantagesElement1 h1{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'boldd';
     letter-spacing: -1px;
     line-height: 95%;
@@ -355,9 +357,9 @@
 }
 
 .pageBlockAdvantagesElement1 h2{
-    font-size: 23px;
-    max-width: 320px;
-    min-width: 320px;
+    font-size: 21px;
+    max-width: 295px;
+    min-width: 295px;
     text-align: justify;
     line-height: 110%;
     display: flex;
@@ -369,7 +371,7 @@
 .pageBlockAdvantagesElement2 { 
     grid-area: 1 / 2 / 2 / 3;
     padding: 25px 0px;
-    max-width: 340px;
+    max-width: 310px;
     margin: auto;
 }
 
@@ -378,7 +380,7 @@
 }
 
 .pageBlockAdvantagesElement2 h1{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'boldd';
     letter-spacing: -1px;
     line-height: 95%;
@@ -387,9 +389,9 @@
 }
 
 .pageBlockAdvantagesElement2 h2{
-    font-size: 23px;
-    max-width: 320px;
-    min-width: 320px;
+    font-size: 21px;
+    max-width: 295px;
+    min-width: 295px;
     text-align: justify;
     line-height: 110%;
     display: flex;
@@ -401,12 +403,12 @@
 .pageBlockAdvantagesElement3 { 
     grid-area: 1 / 3 / 2 / 4;
     padding: 25px 0px;
-    max-width: 340px;
+    max-width: 310px;
     margin: auto;
 }
 
 .pageBlockAdvantagesElement3 h1{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'boldd';
     letter-spacing: -1px;
     line-height: 95%;
@@ -415,10 +417,10 @@
 }
 
 .pageBlockAdvantagesElement3 h2{
-    font-size: 23px;
+    font-size: 21px;
     text-align: justify;
-    max-width: 335px;
-    min-width: 335px;
+    max-width: 295px;
+    min-width: 295px;
     line-height: 110%;
     display: flex;
     margin: auto;
@@ -443,7 +445,7 @@
     background-color: var(--white);
     display: flex;
     margin: auto;
-    max-width: 1324px;
+    max-width: 1250px;
     border-radius: 30px;
     transition: .35s ease-in-out;
 }
@@ -458,7 +460,7 @@
 }
 
 .pageBlockVTBBannerText {
-    margin-left: 115px;
+    margin-left: 95px;
     margin-right: 72px;
     padding: 80px 0px;
 }
