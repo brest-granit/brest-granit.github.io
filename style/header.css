@@ -256,7 +256,6 @@
     background-color: var(--white);
     border-radius: 20px;
     padding: 35px;
-    min-width: 1090px;
 }
 
 .pageBlockSuggestionElement3Text{
@@ -280,7 +279,6 @@
     font-size: 36px;
     margin-bottom: 15px;
     line-height: 105%;
-    min-width: 500px;
 }
 
 .pageBlockSuggestionElementText h2{
@@ -298,11 +296,11 @@
 }
 
 .pageBlockSuggestionElement3Text h2{
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-size: 22px;
     font-family: 'medd';
-    line-height: 125%;
+    margin-bottom: 25px;
     min-width: 500px;
+    line-height: 125%;
 }
 
 .pageBlockSuggestionsButton{
@@ -946,30 +944,3 @@ footer p{
     padding-right: 122px;
     max-height: 115px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
