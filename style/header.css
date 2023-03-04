@@ -224,12 +224,6 @@
     margin-bottom: 20px;
 }
 
-.pageBlockSuggestionElement{
-    background-color: var(--white);
-    border-radius: 20px;
-    padding: 20px;
-}
-
 .pageBlockSuggestionElement1{
     width: 100%;
     background-image: url(../img/gravestone.png);
@@ -238,6 +232,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
     margin-right: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
 }    
 
 .pageBlockSuggestionElement2{
@@ -247,10 +244,17 @@
     background-position-y: 94px;
     background-repeat: no-repeat;
     background-size: 45%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
 }
 
 .pageBlockSuggestionElement3{
     display: flex;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    min-width: 1090px;
 }
 
 .pageBlockSuggestionElement3Text{
@@ -271,28 +275,32 @@
 
 .pageBlockSuggestionElementText h1 {
     font-family: 'boldd';
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 15px;
-    line-height: 110%;
+    line-height: 105%;
+    min-width: 500px;
 }
 
 .pageBlockSuggestionElementText h2{
     font-size: 22px;
     font-family: 'medd';
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     max-width: 320px;
+    line-height: 125%;
 }
 
 .pageBlockSuggestionElement3Text h1{
     font-family: 'boldd';
-    font-size: 38px;
-    margin-bottom: 23px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .pageBlockSuggestionElement3Text h2{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: 'medd';
+    line-height: 125%;
+    min-width: 500px;
 }
 
 .pageBlockSuggestionsButton{
@@ -302,7 +310,8 @@
     background-color: var(--skyblue);
     border-radius: 15px;
     transition: 0.15s ease-in-out;
-    width: fit-content;
+    /* width: fit-content; */
+    width: min-content;
     padding: 15px 25px;
     display: block;
 }
