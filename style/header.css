@@ -946,7 +946,10 @@ footer p{
     max-height: 115px;
 }
 
-
+.WhiteSpaced{
+    font-family: 'boldd';
+    line-height: 105%;
+}
 
 
 
