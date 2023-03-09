@@ -334,7 +334,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
-    max-width: 1050px;
+    max-width: 1175px;
     margin: auto;
     overflow: hidden;
 }
