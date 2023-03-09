@@ -329,115 +329,47 @@
 }
 
 .pageBlockAdvantages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 0px;
     max-width: 1175px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.pageBlockAdvantagesElement1 { 
-    grid-area: 1 / 1 / 2 / 2;
-    padding: 25px 0px;
-    max-width: 310px;
-    margin: auto;
-}
-
-.pageBlockAdvantagesElement1 h1{
-    font-size: 28px;
-    font-family: 'boldd';
-    letter-spacing: -1px;
-    line-height: 95%;
-    text-align: center;
-    display: flex;
-}
-
-.pageBlockAdvantagesElement1 h2{
-    font-size: 19px;
-    max-width: 270px;
-    min-width: 270px;
-    text-align: justify;
-    line-height: 110%;
     display: flex;
     margin: auto;
-    padding: 6px 0px;
-    font-family: 'medd';
-    }
-    
-.pageBlockAdvantagesElement2 { 
-    grid-area: 1 / 2 / 2 / 3;
-    padding: 25px 0px;
-    max-width: 310px;
-    margin: auto;
 }
 
-.pageBlockAdvantagesElement2 .pageBlockAdvantagesElementLogo{
-    margin-left: 25px;
+.pageBlockAdvantagesElement{
+    width: 100%;
+    padding: 10px 35px;
 }
 
-.pageBlockAdvantagesElement2 h1{
-    font-size: 28px;
-    font-family: 'boldd';
-    letter-spacing: -1px;
-    line-height: 95%;
-    text-align: center;
-    display: flex;
-}
-
-.pageBlockAdvantagesElement2 h2{
-    font-size: 19px;
-    max-width: 270px;
-    min-width: 270px;
-    text-align: justify;
-    line-height: 110%;
-    display: flex;
-    margin: auto;
-    padding: 6px 0px;
-    font-family: 'medd';
-    }
-
-.pageBlockAdvantagesElement3 { 
-    grid-area: 1 / 3 / 2 / 4;
-    padding: 25px 0px;
-    max-width: 310px;
-    margin: auto;
-}
-
-.pageBlockAdvantagesElement3 h1{
-    font-size: 28px;
-    font-family: 'boldd';
-    letter-spacing: -1px;
-    line-height: 95%;
-    text-align: center;
-    display: flex;
-}
-
-.pageBlockAdvantagesElement3 h2{
-    text-align: justify;
-    font-size: 19px;
-    max-width: 270px;
-    min-width: 270px;
-    line-height: 110%;
-    display: flex;
-    margin: auto;
-    padding: 6px 0px;
-    font-family: 'medd';
-    }
-
-.pageBlockAdvantagesElementLogo{
-    color: var(--skyblue);
-    display: flex;
+.pageBlockAdvantagesElement:not(:first-child){
+    margin-left: 20px;
 }
 
 .pageBlockAdvantagesElementTitle{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-    width: 290px;
+    margin-bottom: 20px;
+}
+
+.pageBlockAdvantagesElementTitleSpan{
+    font-size: 28px;
+    font-family: 'boldd';
+    letter-spacing: -1px;
+    line-height: 95%;
+    text-align: center;
+}
+
+.pageBlockAdvantagesElementTitleLogo{
+    margin-right: 20px;
+}
+
+.pageBlockAdvantagesElementText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 110%;
+    font-family: 'medd';
 }
 
 .pageBlockVTBBanner{
@@ -784,11 +716,12 @@
 .pageBlockLocationMap{
     width: 750px;
     height: 300px;
-    background-image: url("../img/map.png");
+    /* background-image: url("../img/map.png"); */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background-position-x: 52%;
-    background-position-y: 48%;
+    overflow: hidden;
+    /* background-position-x: 52%;
+    background-position-y: 48%; */
 }
 
 .pageBlockLocationContacts{
