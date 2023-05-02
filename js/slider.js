@@ -5,13 +5,13 @@ window.addEventListener('DOMContentLoaded', function()
     let w = imgContainer.offsetWidth;
 
     let img1 = document.createElement('div');
-    img1.style.backgroundImage = "url(./img/tomba1.png)"
+    img1.style.backgroundImage = "url(./img/tomba1.jpg)"
     img1.className = 'mainImage';
     imgContainer.appendChild(img1);
 
     let img = document.createElement('div');
     img.className = 'mainImage';
-    img.style.backgroundImage = "url(./img/tomba2.png)"
+    img.style.backgroundImage = "url(./img/tomba2.jpg)"
     img1.style.backgroundSize = img.style.backgroundSize = `${imgContainer.offsetWidth}px ${imgContainer.offsetHeight}px`
     img.style.width = "50%"
     imgContainer.appendChild(img);

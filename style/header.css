@@ -35,6 +35,7 @@
 
 .headerLogoLogo img{
     max-height: 80px;
+    pointer-events: none;
 }
 
 .headerLogo{
@@ -48,6 +49,7 @@
 }
 
 .headerLogo img{
+    pointer-events: none;
     max-height: 62px;
 }
 
@@ -79,6 +81,8 @@
     width: 100%;
     font-size: 21px;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .headerContactsIconGeo{
@@ -128,6 +132,14 @@
 }
 
 .headerDropdownList{
+    position: absolute;
+    max-height: 0px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+}
+
+.headerDropdownListNoLimit{
     position: absolute;
     max-height: 0px;
     transition: 0.5s ease-in-out;
@@ -185,6 +197,7 @@
 }
 
 .mainBannerContent img {
+    pointer-events: none;
     height: 523px;
     margin-top: 52px;
 }
@@ -226,6 +239,36 @@
     margin-bottom: 20px;
 }
 
+.pageBlockSuggestionElementsSecond{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pageBlockSuggestionElementSecond1{
+    width: 100%;
+    background-image: url(../img/gravestone.png);
+    background-position-x: 180px;
+    background-position-y: 85px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}    
+
+.pageBlockSuggestionElementSecond2{
+    display: flex;
+    width: 100%;
+    background-position-x: 319px;
+    background-position-y: 94px;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}
+
 .pageBlockSuggestionElement1{
     width: 100%;
     background-image: url(../img/gravestone.png);
@@ -242,13 +285,14 @@
 .pageBlockSuggestionElement2{
     width: 100%;
     background-image: url(../img/ogrady.png);
-    background-position-x: 319px;
-    background-position-y: 94px;
+    background-position-x: 321px;
+    background-position-y: 82px;
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-size: 42%;
     background-color: var(--white);
     border-radius: 20px;
     padding: 35px;
+    margin-right: 20px;
 }
 
 .pageBlockSuggestionElement3{
@@ -256,6 +300,79 @@
     background-color: var(--white);
     border-radius: 20px;
     padding: 35px;
+}
+
+.pageBlockSuggestionElementGrave1{
+    height: 396px;
+    width: 100%;
+    max-width: 197px;
+    background-image: url(../img/gravestone.png);
+    background-position-x: 0;
+    background-position-y: 108px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}    
+
+.pageBlockSuggestionElementGrave2{
+    height: 396px;
+    width: 100%;
+    max-width: 198px;
+    background-image: url(../img/gravestone_dbl.png);
+    background-position-x: 11px;
+    background-position-y: 108px;
+    background-repeat: no-repeat;
+    background-size: 93%;
+    margin-right: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}    
+
+.pageBlockSuggestionElementGrave3{
+    height: 396px;
+    background-image: url(../img/gravestone_mass.png);
+    background-position-x: 0;
+    background-position-y: 108px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}    
+
+.pageBlockSuggestionElementGrave4{
+    height: 396px;
+    width: 100%;
+    background-image: url(../img/gravestone-other.png);
+    background-position-x: 157px;
+    background-position-y: 141px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}    
+
+.pageBlockSuggestionElementTextGrave2big{
+    font-family: 'boldd';
+    font-size: 35px;
+    line-height: 105%;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.pageBlockSuggestionElementTextGrave2dop{
+    font-size: 22px;
+    font-family: 'medd';
+    margin-bottom: 33px;
+    max-width: 160px;
+    line-height: 125%;
+    padding-top: 17px;
 }
 
 .pageBlockSuggestionElement3Text{
@@ -266,6 +383,10 @@
     width: 100%;
 }
 
+.pageBlockSuggestionElementSecondDifference{
+    width: 100%;
+}
+
 .pageBlockSuggestionElement3DifferenceElements{
     height: 94%;
     margin: 10px 10px 10px 0px;
@@ -273,6 +394,9 @@
     border-radius: 14px;
 }
 
+.pageBlockSuggestionElementText {
+    width: 100%;
+}
 
 .pageBlockSuggestionElementText h1 {
     font-family: 'boldd';
@@ -287,6 +411,33 @@
     margin-bottom: 25px;
     max-width: 320px;
     line-height: 125%;
+}
+
+.pageBlockSuggestionElementTextGrave {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageBlockSuggestionElementTextGrave2 {
+    width: 100%;
+}
+
+.pageBlockSuggestionElementTextGrave span {
+    font-family: 'boldd';
+    font-size: 35px;
+    line-height: 105%;
+    margin-bottom: 266px;
+    text-align: center;
+}
+
+
+.pageBlockSuggestionElementTextGrave2 span {
+    font-family: 'boldd';
+    font-size: 28px;
+    line-height: 105%;
+    text-align: center;
 }
 
 .pageBlockSuggestionElement3Text h1{
@@ -423,6 +574,7 @@
 }
 
 .pageBlockVTBBannerCard img{
+    pointer-events: none;
     transform: rotate(353deg);
     width: 500px;
     transition: 0.635s ease-in-out;
@@ -465,13 +617,9 @@
 }
 .pageBlockOurWorksImageContainer img 
 {
-
-   
-   
-   
+    pointer-events: none;
     position: absolute;
     overflow: hidden;
-  
 }
 
 
@@ -678,6 +826,7 @@
 }
 
 .pageBlockReviewElementLogo img{
+    pointer-events: none;
     height: 43px;
     width: 43px;
     border-radius: 69px;
@@ -715,7 +864,7 @@
 
 .pageBlockLocationMap{
     width: 750px;
-    height: 300px;
+    height: 405px;
     /* background-image: url("../img/map.png"); */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -725,7 +874,7 @@
 }
 
 .pageBlockLocationContacts{
-    padding: 22px 0px 0px 22px;
+    padding: 5px 0px 0px 22px;
     margin-left: 32px;
 }
 
@@ -748,7 +897,7 @@
     min-width: 170px;
     margin-left: 28px;
     font-family: 'medd';
-    /* text-align: center; */
+    color: black;
 }
 
 .pageBlockLocationContantsLogo{
@@ -843,6 +992,7 @@ footer p{
 }
 
 .pageBlockUpperFooterContentLogo img{
+    pointer-events: none;
     padding-right: 122px;
     max-height: 115px;
 }
