@@ -1,0 +1,1853 @@
+<!DOCTYPE html><html lang = 'ru'>
+    <head>
+        <title>TAIRGRANIT</title>
+        <link  rel='stylesheet' type='text/css' href='style/main.css'>
+        <link  rel='stylesheet' type='text/css' href='style/header.css'> 
+        <link  rel='stylesheet' type='text/css' href='style/home.css'> 
+        <link  rel='stylesheet' type='text/css' href='style/pamyatniki.css'> 
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=7204274e-d911-4b33-87e8-7f8ac185e12c&lang=ru_RU" type="text/javascript"></script>
+        <script src="js/map.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/btn.js"></script>
+    </head>
+    <body>
+        
+    <header>
+        <div class="headerTop">
+            <div class="headerLogoGroup">
+            <a href="#" class="headerLogoLogo"><img src="img/logologo2.svg"></a>
+            <a href="#" class="headerLogo"><img src="img/logo.svg"></a>
+        </div>
+        <div class="headerContacts">
+            <a class="headerLocation">
+                <div class="headerContactsIconGeo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </div>
+                г.Брест, Волгоградская 19, пав.311, рынок Лагуна
+            </a>
+            <div class="HeaderPhoneBlock"><a class="headerPhone" href="tel:+375298334339">
+                <div class="headerContactsIconPhone">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                </div>
+                +375 (29) 833-43-39 </a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 6px;" viewBox="0 0 333333 333333" width="30" height="19" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M166667 0c92048 0 166667 74619 166667 166667s-74619 166667-166667 166667S0 258715 0 166667 74619 0 166667 0zm22374 119878c5776 1232 10204 3431 13987 6980 4867 4603 7536 10174 8708 18180 792 5219 470 7272-1378 8973-1730 1583-4926 1642-6861 147-1407-1056-1847-2170-2170-5191-381-4017-1085-6832-2287-9442-2581-5542-7126-8416-14808-9354-3607-439-4692-850-5865-2228-2140-2552-1319-6685 1642-8211 1115-557 1584-616 4047-469 1524 88 3783 352 4985 615zm-8269-43397c10087 1261 18239 3695 27182 8064 8796 4311 14426 8386 21874 15805 6979 7008 10850 12316 14955 20555 5718 11494 8973 25158 9529 40201 206 5131 59 6275-1114 7741-2228 2845-7125 2375-8796-820-528-1056-675-1964-850-6070-294-6304-733-10380-1613-15248-3460-19089-12609-34336-27212-45274-12169-9148-24748-13606-41227-14574-5571-322-6539-528-7800-1495-2346-1848-2463-6187-206-8210 1378-1261 2346-1437 7126-1291 2492 88 6157 381 8151 616v-1zm-67031 3167c1027 352 2610 1173 3519 1759 5572 3694 21083 23546 26156 33457 2902 5659 3870 9852 2962 12960-939 3343-2493 5102-9443 10703-2785 2258-5395 4574-5805 5190-1056 1525-1907 4516-1907 6627 30 4897 3196 13781 7361 20614 3225 5307 9002 12110 14719 17330 6715 6157 12638 10350 19324 13664 8591 4281 13841 5366 17681 3577 967-439 1994-1026 2317-1289 293-265 2550-3021 5014-6070 4750-5982 5834-6950 9090-8064 4135-1407 8357-1027 12608 1143 3226 1672 10263 6041 14808 9207 5981 4193 18766 14632 20496 16715 3050 3753 3578 8561 1525 13869-2170 5600-10615 16098-16509 20584-5337 4047-9119 5600-14104 5835-4105 205-5806-147-11055-2317-41169-16978-74039-42312-100136-77118-13635-18180-24015-37034-31112-56593-4134-11406-4339-16362-938-22197 1466-2463 7712-8562 12257-11963 7565-5630 11055-7712 13841-8298 1906-411 5219-88 7330 675zm69054 18092c17799 2609 31581 10879 40612 24309 5073 7565 8239 16450 9324 25979 381 3490 381 9853-29 10909-382 997-1613 2345-2669 2903-1143 586-3576 528-4925-176-2258-1143-2933-2961-2933-7887 0-7595-1965-15600-5366-21816-3871-7096-9500-12960-16361-17037-5894-3519-14603-6128-22550-6774-2874-234-4457-820-5542-2081-1671-1906-1848-4486-440-6627 1525-2375 3870-2756 10879-1701z" fill="#7b519d"/></svg></a>
+                <a href="#"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" width="30" height="19" style="margin-top: 6px;" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="256" cy="256" fill="#0088CC" id="ellipse" r="256"/><path d="M246.4,332.1c-12.3,11.9-24.4,23.7-36.5,35.5c-4.2,4.1-8.9,6.4-15,6.1c-4.1-0.2-6.4-2-7.7-5.9  c-9.2-28.6-18.6-57.2-27.8-85.9c-0.9-2.8-2.2-4.1-5-5c-21.7-6.6-43.5-13.4-65.1-20.3c-3.3-1.1-6.7-2.4-9.6-4.4  c-4.5-3-5.1-7.9-1.1-11.5c3.7-3.3,8.1-6.1,12.7-7.9c26.6-10.5,53.3-20.7,80-31c67.7-26.1,135.4-52.3,203.1-78.4  c12.9-5,22.8,2,21.4,16c-0.9,8.9-3.2,17.7-5,26.5c-14.7,69.4-29.4,138.9-44.2,208.3c-3.5,16.5-15.1,20.8-28.6,10.8  c-22.7-16.7-45.4-33.5-68.1-50.3C248.8,333.8,247.7,333,246.4,332.1z M195.4,353.2c0.3-0.1,0.5-0.1,0.8-0.2c0.1-0.7,0.3-1.3,0.4-1.9  c1.5-15.7,3-31.5,4.3-47.2c0.3-3.5,1.5-6,4.1-8.4c20.9-18.7,41.8-37.6,62.6-56.4c23.1-20.8,46.2-41.6,69.2-62.5c1.4-1.3,2-3.5,3-5.3  c-2.2-0.2-4.5-1.1-6.5-0.6c-2.7,0.7-5.2,2.3-7.6,3.8c-50.9,32.1-101.9,64.2-152.8,96.3c-2.9,1.8-3.4,3.3-2.3,6.5  c3.8,10.8,7.2,21.7,10.7,32.6C186,324.3,190.7,338.8,195.4,353.2z" fill="#FFFFFF" id="logo"/></svg></a>
+                <a href="#"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg width="30" height="19" style="margin-top: 6px;" enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="64" cy="64" fill="#25D366" r="64"/><g><path d="M92.346,35.49c-7.522-7.53-17.523-11.678-28.179-11.683c-21.954,0-39.826,17.868-39.833,39.831   c-0.004,7.022,1.831,13.875,5.316,19.913L24,104.193l21.115-5.538c5.819,3.171,12.369,4.844,19.036,4.847h0.017l0,0   c21.954,0,39.823-17.871,39.832-39.833C104.005,53.027,99.864,43.019,92.346,35.49 M64.168,96.774h-0.013   c-5.943-0.002-11.769-1.598-16.853-4.614l-1.209-0.718l-12.53,3.287l3.343-12.216l-0.787-1.256   c-3.315-5.27-5.066-11.361-5.062-17.619c0.006-18.253,14.859-33.104,33.121-33.104c8.844,0.002,17.155,3.451,23.407,9.71   c6.251,6.258,9.691,14.575,9.689,23.422C97.268,81.922,82.415,96.774,64.168,96.774 M82.328,71.979   c-0.996-0.499-5.889-2.904-6.802-3.239c-0.913-0.332-1.574-0.497-2.238,0.499s-2.571,3.239-3.153,3.903   c-0.58,0.664-1.16,0.748-2.156,0.249s-4.202-1.549-8.001-4.941c-2.96-2.637-4.958-5.899-5.538-6.895s-0.062-1.533,0.437-2.03   c0.448-0.446,0.996-1.162,1.493-1.744c0.497-0.582,0.663-0.997,0.995-1.66c0.332-0.664,0.167-1.245-0.083-1.743   c-0.25-0.499-2.24-5.398-3.068-7.391c-0.809-1.941-1.629-1.678-2.239-1.708c-0.582-0.028-1.245-0.036-1.908-0.036   c-0.663,0-1.742,0.249-2.654,1.246c-0.911,0.996-3.483,3.403-3.483,8.304c0,4.898,3.566,9.632,4.064,10.295   c0.498,0.663,7.018,10.718,17.002,15.029c2.374,1.024,4.229,1.637,5.674,2.097c2.384,0.759,4.554,0.65,6.27,0.394   c1.912-0.285,5.888-2.407,6.719-4.732c0.829-2.324,0.829-4.316,0.578-4.732C83.986,72.727,83.322,72.478,82.328,71.979" fill="#FFFFFF"/></g></svg></a>
+              </div>
+        </div>
+            <div class="headerSocial">
+                <a class="headerSocialINST" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a>
+                <!-- <a class="headerSocialVK" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="currentColor" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+                    </svg>
+
+                </a> -->
+            </div>
+        </div>
+        <div class="headerBot">
+            <ul class="headerMenu">
+                <li class="headerMenuItemWrap headerDropdownMenuItemWrap"><a href="#" class="headerMenuItemLink">ПАМЯТНИКИ</a>
+                    <ul class="headerDropdownList">
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ОДИНОЧНЫЕ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ГРУППОВЫЕ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">КОМПЛЕКСЫ</a></li>
+                    </ul>
+                </li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ОГРАДЫ</a></li>
+                <li class="headerMenuItemWrap headerDropdownMenuItemWrap"><a href="#" class="headerMenuItemLink">АКСЕССУАРЫ</a>
+                    <ul class="headerDropdownList">
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ВАЗЫ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ЛАМПАДЫ</a></li>
+                    </ul>
+                </li>
+                <li class="headerMenuItemWrap headerDropdownMenuItemWrap"><a href="#" class="headerMenuItemLink">ОФОРМЛЕНИЕ</a>
+                    <ul class="headerDropdownList">
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ХУДОЖЕСТВЕННОЕ ОФОРМЛЕНИЕ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ПЕСКОСТРУЙНАЯ ОБРАБОТКА</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">ГРАВИРОВКА</a></li>
+                    </ul>
+                </li>
+                <li class="headerMenuItemWrap headerDropdownMenuItemWrap"><a href="#" class="headerMenuItemLink">УСЛУГИ</a>
+                    <ul class="headerDropdownList">
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">РЕСТАВРАЦИЯ ПАМЯТНИКОВ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">БЛАГОУСТРОЙСТВО ЗАХОРОНЕНИЙ</a></li>
+                        <li class="headerDropdownMenuItemWrapX"><a href="#" class="headerMenuItemLink">УСТАНОВКА СТОЛЕШНИЦ, СТУПЕНЕЙ</a></li>
+                    </ul>
+                </li>
+                <li class="headerMenuItemWrap"><a href="#" class="headerMenuItemLink">ФОТО РАБОТ</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="pamBanner">
+        <div class="pamBannerContent">
+            <div class="pamBannerContentText">
+            <h2>Изготовление и установка памятников под ключ в Бресте и Брестской области</h2>
+    
+            </div>
+            <img src="img/ang-shakal.png">
+        </div>
+    </div>
+
+ 
+
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, ЧЁРНЫЕ</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/bd677b17-922f-4b08-8997-67173496beb3_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см черный</h2>
+<a class="pamSuggestionsButton">Код: в001</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/dde67515-6d78-4a92-b96f-5ff660a11bcf_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см черный</h2>
+<a class="pamSuggestionsButton">Код: в002</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/d25314cd-efa5-49be-8a53-b40329ac82ed_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см черный</h2>
+<a class="pamSuggestionsButton">Код: в003</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/08a9fccd-8619-4c9d-bc96-b109a82637d6_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см черный</h2>
+<a class="pamSuggestionsButton">Код: в004</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/68a1e21b-5e44-4a8e-be0a-a95fcedcf13f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см черный</h2>
+<a class="pamSuggestionsButton">Код: в004М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/9714530a-6014-4ea8-a64f-fea5501be04f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см черный</h2>
+<a class="pamSuggestionsButton">Код: в005</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/a30215fe-8865-4302-b8f9-275d9f380e86_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см черный</h2>
+<a class="pamSuggestionsButton">Код: в006</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/966b60b9-83b5-4306-85a1-c30dc6d77113_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см черный</h2>
+<a class="pamSuggestionsButton">Код: в007</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/400c86dd-d008-455a-9eac-2a26af482be7_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см черный</h2>
+<a class="pamSuggestionsButton">Код: в008</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/83e88961-0486-4831-b86e-9a42f1a3c2b9_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см черный</h2>
+<a class="pamSuggestionsButton">Код: в009</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/727a8ddc-742e-4c5a-9a2b-02360b1a10c7_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см черный</h2>
+<a class="pamSuggestionsButton">Код: в010</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/cadf36bc-43a6-432d-b014-baa4ce496483_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см черный</h2>
+<a class="pamSuggestionsButton">Код: в011</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/aab200aa-9af1-442b-83a2-e5f935fbc58c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см черный</h2>
+<a class="pamSuggestionsButton">Код: в012</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/151d5cc4-d800-4200-bfb9-b7d0db621f56_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см черный</h2>
+<a class="pamSuggestionsButton">Код: в020</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/41ab787c-00cd-4771-b418-4648e19d0192_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см черный</h2>
+<a class="pamSuggestionsButton">Код: в021</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/ce6b194e-fab9-4a02-afa5-494298c32e05_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см черный</h2>
+<a class="pamSuggestionsButton">Код: в022</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/555475a7-5d02-4330-a3b7-6dc754d7a248_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см черный</h2>
+<a class="pamSuggestionsButton">Код: в023</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6deb13d0-cccc-45db-af9d-a561ddccfd03_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см черный</h2>
+<a class="pamSuggestionsButton">Код: в024</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0e2a8205-d98f-4636-9357-c77adef25a49_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см черный</h2>
+<a class="pamSuggestionsButton">Код: в025</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b1aad13c-b5cf-46bd-b07f-141262241af6_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см черный</h2>
+<a class="pamSuggestionsButton">Код: в026</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, ТЁМНЫЙ ГРАНИТ</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b8f04239-ded4-4897-b9e2-3130febe7b3c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в701</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/95f46d22-fd6e-4266-8c31-5f0fe2eaeff5_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в702</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/3497ec9e-b1c3-4cc1-af78-4e38463b886f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в703</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/c9c1113c-773a-4fed-ada4-32f873c71c41_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в704</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/23662861-ed81-4246-9e28-919d4b921a41_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в704М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/599c198c-0be4-43f6-87e9-1f6ec519521c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в705</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5c59112b-ee61-4a88-ac6b-c916fcd838e8_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в706</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/bde4c4c8-b097-486e-96f0-b59a2c7e7a3d_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в707</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/4f6caa2f-77fb-4044-9149-b77435a89850_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см черный</h2>
+<a class="pamSuggestionsButton">Код: в708</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/c1bea86a-1331-4fb4-8d4a-836e4380d554_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см черный</h2>
+<a class="pamSuggestionsButton">Код: в709</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/cf2fee1b-76a1-4616-9729-a8fa8a60aa0f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см черный</h2>
+<a class="pamSuggestionsButton">Код: в710</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/3358518c-8a9b-4ed4-8afd-2c03bda82d93_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см черный</h2>
+<a class="pamSuggestionsButton">Код: в711</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f0ff194e-18cc-403e-b6b9-894cf9c68671_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в712</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e5c21951-a22a-49f7-b229-200b6ac4d691_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в720</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b00d8f6b-e649-4849-831a-6dde48c4c567_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в721</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/a4923c2e-16e8-4517-85fd-e5cce7c7a10c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в722</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/99e377cd-342b-48e5-b80f-7413cdec81f1_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в723</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/579bbc81-8ce5-4116-9b4d-e5fba4e3b8db_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в724</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e21b0f92-17cc-41b4-8d8c-4a76abecb876_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в725</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b469cbf4-2aad-4aad-952f-b245aaa93a5e_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в726</a>
+</div>
+</div>
+</div> 
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f3a19c35-1388-48f3-b519-0e3db504898c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №30 40см темный гранит</h2>
+<a class="pamSuggestionsButton">Код: в720</a>
+</div>
+</div>
+
+
+</div> 
+
+</div>
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, БРОНЗА</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/90a904f6-71a9-4e18-838d-c1946c9b4000_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в201</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/71666987-dd75-436e-bf7f-7acb5b4732af_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см бронза</h2>
+<a class="pamSuggestionsButton">Код: в202</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b9fc14a7-5ce4-4d2e-a47e-5fcd88758eaf_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в203</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/1ec12dbd-0b8b-4678-93e2-6051fffab4de_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в204</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6658ee4f-ad1a-4e28-b821-bbcb93789ba9_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в204М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e58cb22b-d224-4903-802f-535d3e937bdd_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в205</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/77f0b86c-d7d4-4b7f-b663-6b9055313d80_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в206</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/61fb284d-3516-4537-a914-1158d8ba4c83_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в207</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e9554a6d-ef87-4072-8551-63946476c9c8_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в208</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/72bca60b-f1f2-4b0a-91f4-6e882c4d7388_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в209</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fecbec21-844c-46b8-91bd-b2248c9e352c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в210</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/a6f06316-4c9d-49a5-b2d2-34cd2abed336_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в211</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/ddcb7741-dd0c-41f5-81e6-479bcc574b91_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в212</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/8edc3adc-3fb7-47fc-b274-e7dd54f964de_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в220</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/40eae2d5-22e4-4a78-81c7-8ee48e4f787a_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в221</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e759fd61-34c6-4e84-b38b-7916e3282813_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в222</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/2c4cb714-6f1d-40f6-bbd7-ae8ef3bed522_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в223</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6ede31ea-90e8-497a-adf9-b4fdc55f6579_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в224</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fcf8dc99-149d-49a0-a400-0dc0544d4a5b_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в225</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/46d84096-5d6f-4a02-a164-b841637d419e_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см бронза</h2>
+<a class="pamSuggestionsButton">Код: в226</a>
+</div>
+</div>
+</div> 
+</div>
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, ЧЁРНЫЕ С ЗОЛОЧЕНИЕМ</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/02f158c4-9557-4723-b318-ee824b58f428_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в401</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/07f3701c-9b08-45d5-85c4-ce04890b7cef_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в402</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f929cf35-6043-4704-95d7-14b0d778c29b_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в403</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/1574207a-4d19-4e67-84c0-8f54f7684fb1_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в404</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5f85f433-0473-4587-865e-f94ebb2a5aa6_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в404М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e3d6d2cb-dd79-478d-b483-cacfb4d28d72_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в405</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b9d949ec-f32e-46ac-9bba-afaea2d6df3d_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в406</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/9a8003fa-c676-4a7b-a37a-5ac3bc4dbc36_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в407</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/20bbd23a-6ae8-4e24-b32f-a21e7694a1e7_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в408</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5d36f0b9-2872-438d-975d-445d49c134f5_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в409</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fc629fdb-3141-4b39-bb87-23776678ca1d_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в410</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/704d73a5-428a-4c1d-b318-750ba2b869b4_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в411</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fb52d6fd-d03c-4366-b002-e35cab9500cc_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в412</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/e0a3c257-7ca1-4ebb-9dde-3c4a8ef374b7_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в420</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5547c6ef-4170-4d94-8cb4-9f3bc4deb397_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в421</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/1c7e32a0-d555-46d9-a3a5-c916914d3d6f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в422</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/4bf03330-b19b-4268-a2d6-e9bd5c433099_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в423</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/9477faba-4229-4694-985b-27519adfe74a_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в424</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/7dab42d3-1b04-440d-b496-f72d12ed986f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в425</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5867cfae-f201-4c62-ad62-b838f39739ec_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см черн/зол</h2>
+<a class="pamSuggestionsButton">Код: в426</a>
+</div>
+</div>
+</div> 
+</div>
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, ЧЁРНЫЕ С СЕРЕБРЕНИЕМ</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/99ba9afd-a87b-4769-ad7c-416848a73771_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в501</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/ee9522d5-e8e7-4eb7-99e8-8057e4d5041f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в502</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/cb61a611-74a8-4133-b4dc-15a4a3f53ac1_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в503</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/2046c3aa-f86a-4849-9f66-40bd0b9f0bed_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в504</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f895a455-488b-4ed9-9f6f-0b1b45d45b27_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в504М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/621bd6aa-8d39-47bc-ba5a-e35b33300488_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в505</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/186c0606-84bb-4deb-b689-0609db52ffef_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в506</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/ea7da9a8-7d3c-4cb1-903d-fe9eb769d214_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в507</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/13c94f4a-d6fd-40df-b0ae-69673118642e_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в508</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f78bb89a-7298-41dc-9a7b-30bca23ec1d7_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в509</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/d81d8f7e-41a8-4a18-9423-ee17fff2de24_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в510</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/21f04594-239f-4800-a4bf-94205c73a604_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в511</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b1f7712d-f91f-4681-8873-82968f09707f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в512</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0f6e1d9e-da92-4a46-b1e3-0c3fee006d84_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в520</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/2b8235ee-51d2-44e1-88d3-e6e278fa2cdb_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в521</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f8917b2d-1030-4afc-9bc5-b2cf9191b1fe_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в522</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0cb0a6d3-fe4c-4adb-b123-c71f1f83dd2b_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в523</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/3f256f9b-07cf-4e3d-9009-c6db033242fb_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в524</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/9c5a87c9-e0b9-4d67-8fb2-5d7e3e0a4560_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в525</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6fc87929-2f08-436f-aab6-96ac29097a73_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см черн/серебро</h2>
+<a class="pamSuggestionsButton">Код: в526</a>
+</div>
+</div>
+</div> 
+</div>
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, СЕРЕБРО</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6b407248-e8c3-4250-be59-60f9e0710283_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в601</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/7b54c726-fb48-4057-89d8-1a13e1ea2ae5_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см серебро</h2>
+<a class="pamSuggestionsButton">Код: в602</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/66903a09-3d35-4126-8daa-a1ac7fabea23_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в603</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/699b95e2-d5e4-404b-8725-504630a91030_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в604</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/88ff7455-81c6-4b37-997e-fffd46cc64bf_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в604М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5c662f55-4442-4046-8773-ba0a8afd90f4_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в605</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/558ad9f6-7559-4abf-99ac-acc14b36d2e1_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в606</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/91e6c63b-c69f-4902-ba3d-8d714d4c318c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в607</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5509829e-07b7-4e10-8f75-8f214f376f5f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в608</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/5a8db1f9-275c-47c2-8fff-b1096b4680a2_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в609</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/b2510195-0f3b-445a-9d50-5a851c4dab16_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в610</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0b6121b7-3fce-45d1-85d8-8ae735323fa0_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в611</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fbe197e2-102d-4fd7-897c-4fc971bafd19_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в612</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f9dfa0c9-1cf7-4463-a43f-591c82a9bc3c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в620</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f0b535c6-5431-4643-b9fc-ed54534cfdc6_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в621</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/850262f7-5ee7-44b9-b5a2-2f90b489e9b8_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в622</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/d5d3f18e-ee78-4389-92bf-7fc3fe32e465_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в623</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/360638c1-ab48-41da-8deb-5c6fd26c8773_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в624</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/f5b53121-5517-4e96-82e7-c8193652300b_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в625</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/d28a99b4-331f-490c-bfce-152d04d7b304_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см серебро</h2>
+<a class="pamSuggestionsButton">Код: в626</a>
+</div>
+</div>
+</div> 
+</div>
+<div class="pageBlockName">ВАЗЫ ПОЛИМЕРНЫЕ, БЕЛЫЕ</div>
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/42385fbf-4402-47fb-a5c1-dd52ee18c794_preview.jpg">
+</div>
+<h2>Ваза ритуальная №1 22 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в301</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/6f465e88-a7d0-4d7c-86bb-5137ab3a6a34_preview.jpg">
+</div>
+<h2>Ваза ритуальная №2 30см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в302</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/77f2b790-dd4b-4239-b583-f399d23cf779_preview.jpg">
+</div>
+<h2>Ваза ритуальная №3 22 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в303</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/c7ef9fef-f653-4ac9-a344-5ed825cca6db_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4 30 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в304</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/c7ef9fef-f653-4ac9-a344-5ed825cca6db_preview.jpg">
+</div>
+<h2>Ваза ритуальная №4М 22 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в304М</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/33d89a57-506d-4c2c-9a24-954ea6795242_preview.jpg">
+</div>
+<h2>Ваза ритуальная №5 27 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в305</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/aa509c3f-0dda-40da-a889-1bed703cec14_preview.jpg">
+</div>
+<h2>Ваза ритуальная №6 30 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в306</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/56ef4c26-da18-4fd5-bcaf-64ffc2dda4df_preview.jpg">
+</div>
+<h2>Ваза ритуальная №7 26 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в307</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/46514715-c33e-4be1-957c-5a9e722fee1e_preview.jpg">
+</div>
+<h2>Ваза ритуальная №8 32 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в308</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/df51a3f9-62d4-4cb8-92ae-959823551d10_preview.jpg">
+</div>
+<h2>Ваза ритуальная №9 28 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в309</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/37a2df67-3932-4bc8-b7fd-b4cf360c7329_preview.jpg">
+</div>
+<h2>Ваза ритуальная №10 29 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в310</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/fb1dbeda-99b1-45ef-ada9-4c4d43a7edbc_preview.jpg">
+</div>
+<h2>Ваза ритуальная №11 27 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в311</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/8614158e-78ca-4755-8fbf-f6bd69ea995a_preview.jpg">
+</div>
+<h2>Ваза ритуальная №12 29 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в312</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0977657d-0ac8-4774-8f88-b192b693bd7b_preview.jpg">
+</div>
+<h2>Ваза ритуальная №20 27 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в320</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/045e2558-3c24-4276-b16d-ac5f6a76f35f_preview.jpg">
+</div>
+<h2>Ваза ритуальная №21 38 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в321</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/0464b30c-3a6f-41ac-959e-b781a694bf12_preview.jpg">
+</div>
+<h2>Ваза ритуальная №22 40 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в322</a>
+</div>
+</div>
+</div> 
+</div>
+
+<div class="pamSuggestions">
+
+<div class="pamSuggestionElementsSecond">
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/aeb3ab17-63a1-4433-92ba-f1209e1ef30c_preview.jpg">
+</div>
+<h2>Ваза ритуальная №23 34 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в323</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/bd056949-de1d-4ae4-ad28-f9b54ee4ee37_preview.jpg">
+</div>
+<h2>Ваза ритуальная №24 34 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в324</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/d27ef7d6-2273-4b58-bc0c-4ed04b9c6fb3_preview.jpg">
+</div>
+<h2>Ваза ритуальная №25 36 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в325</a>
+</div>
+</div>
+
+<div class="pamSuggestionElement2 bordered">
+<div class="pamSuggestionElementText">
+<div class="vaza-image">
+<img src="img/vazy/534dfb7f-1e8d-4ce8-811a-7099b6b8e7e2_preview.jpg">
+</div>
+<h2>Ваза ритуальная №26 38 см мрамор</h2>
+<a class="pamSuggestionsButton">Код: в326</a>
+</div>
+</div>
+</div> 
+</div>
+</div>
+
+<div class="pageBlockPadding"></div>
+<div class="pageBlockVTBBanner bordered">
+    <div class="pageBlockVTBBannerText">
+        <h1>Рассрочка</h1>
+        <h2>Теперь вы можете воспользоваться картой рассрочки Черепаха <br>от банка ВТБ на 8 месяцев</h2>
+        <a class="pageBlockSuggestionsButton" href="#">СВЯЗАТЬСЯ С НАМИ</a>
+        <h3>Звоните и получите подробную консультацию</h3>
+
+    </div>
+    <div class="pageBlockVTBBannerCard">
+        <img src="img/cherepah.png">
+        
+    </div>
+    
+</div>
+
+
+<div class="pageBlockName">СВЯЖИТЕСЬ С НАМИ</div>
+<div class="pageBlockNameDown">
+    <div class="pageBlockNameDownLine">
+        <svg height="5" width="90">
+        <line x1="0" y1="0" x2="90" y2="0" style="stroke:rgb(175, 175, 175);stroke-width:5" />
+      </svg></div>
+    <a>TAIRGRANIT.BY</a>
+</div>
+<div class="pageBlockLocation">
+    <div class="pageBlockLocationMap" id="map">
+        
+    </div>
+    <div class="pageBlockLocationContacts"> 
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-map" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                  </svg>
+            </div>
+            <h1>Адрес</h1>
+            <h2>ул.Волгоградская 19 пав. 311, рын.Лагуна</h2>
+        </div>
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>  
+            </div>
+            <h1>Телефон</h1>
+            <h2>+375 (29) 833-43-39</h2>
+        </div>
+        
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="White" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+                </svg>   
+            </div>
+            <h1>Viber</h1>
+            <h2><a href="viber://chat?number=%2B375298334339" style="
+                color: black;
+                font-family: 'medd';
+            ">+375 (29) 833-43-39</a></h2>
+        </div>
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>  
+            </div>
+
+            <h1>WhatsApp</h1>
+            <h2><a href="https://wa.me/375298334339"  style="
+                color: black;
+                font-family: 'medd';
+                ">+375 (29) 833-43-39</a></h2>
+        </div>
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>  
+            </div>
+
+            <h1>Telegram</h1>
+            <h2>@TAIRGRANIT</h2>
+        </div>
+        <div class="pageBlockLocationContantsTitle">
+            <div class="pageBlockLocationContantsLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>  
+            </div>
+            <h1>Instagram</h1>
+            <h2>@TAIRGRANIT</h2>
+        </div>
+    </div>
+</div>
+<a class="back_to_top" title="Наверх"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/></svg></a>
+
+    <div class="pageBlockUpperFooter">
+        <div class="pageBlockUpperFooterContent">
+            <div class="pageBlockUpperFooterSiteMap">
+                
+                    <a href="#" class="pageBlockUpperFooterContentLogo"><img src="img/logologo2.svg"></a>
+                
+                <div class="pageBlockUpperFooterSiteMapElement">
+                    <a href="#">Element 1</a>
+                    <a href="#">Element 2</a>
+                    <a href="#">Element 3</a>
+                    <a href="#">Element 4</a>
+                    <a href="#">Element 5</a>
+                    <a href="#">Element 6</a>
+                </div>
+                <div class="pageBlockUpperFooterSiteMapElement">
+                    <a href="#">Element 1</a>
+                        <a href="#">Element 2</a>
+                            <a href="#">Element 3</a>
+                                <a href="#">Element 4</a>
+                                    <a href="#">Element 5</a>
+                                        <a href="#">Element 6</a>
+                </div>
+            </div>
+
+            <div class="pageBlockUpperFooterTime">
+                <div class="pageBlockUpperFooterTimeTitle">
+                    <div class="pageBlockUpperFooterTimeTitleLogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar2-week-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                        </svg>
+                    </div> 
+                    <div class="pageBlockUpperFooterTimeTitleText">
+                        <h1>Время работы</h1>
+                    </div>
+                </div> 
+                <div class="pageBlockUpperFooterTimeTitleElement">
+                    <p>ВТ-СБ</p> 
+                    <p>10.00 - 18.00 </p> 
+                </div>
+                <div class="pageBlockUpperFooterTimeTitleElement">
+                    <p>ВС</p> 
+                    <p>11.00 - 14.00</p> 
+                </div>
+                <div class="pageBlockUpperFooterTimeTitleElement">
+                    <p>обед</p> 
+                    <p>13.00 - 13.30</p> 
+                </div> 
+                <div class="pageBlockUpperFooterTimeTitleElement">
+                    <p>ПН</p> 
+                    <p>ВЫХОДНОЙ</p> 
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<footer>
+<p>© Copyright - Все права защищены TAIRGRANIT.BY</p>
+</footer>
+</html>
