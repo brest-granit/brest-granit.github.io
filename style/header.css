@@ -295,6 +295,19 @@
     margin-right: 20px;
 }
 
+.pageBlockSuggestionElement21{
+    width: 100%;
+    background-image: url(../img/pesk.png);
+    background-position-x: 340px;
+    background-position-y: 85px;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+}
+
 .pageBlockSuggestionElement3{
     display: flex;
     background-color: var(--white);
@@ -311,9 +324,9 @@
     height: 315px;
     width: 100%;
     max-width: 197px;
-    background-image: url(../img/gravestone.png);
+    background-image: url(../img/pamyatniki/pam76.jpg);
     background-position-x: 0;
-    background-position-y: 108px;
+    background-position-y: 100px;
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 20px 0px 0px 20px;
@@ -340,9 +353,9 @@
     height: 315px;
     width: 100%;
     max-width: 198px;
-    background-image: url(../img/gravestone_dbl.png);
+    background-image: url(../img/pamyatniki/pam6.jpg);
     background-position-x: 11px;
-    background-position-y: 108px;
+    background-position-y: 118px;
     background-repeat: no-repeat;
     background-size: 93%;
     background-color: var(--white);
@@ -351,7 +364,7 @@
 
 .pageBlockSuggestionElementGrave3{
     height: 315px;
-    background-image: url(../img/gravestone_mass.png);
+    background-image: url(../img/gravestone.png);
     background-position-x: 0;
     background-position-y: 108px;
     background-repeat: no-repeat;
@@ -359,6 +372,7 @@
     background-color: var(--white);
     padding: 35px;
     border-radius: 0px 20px 20px 0px;
+    min-width: 175px;
 }    
 
 .pageBlockSuggestionElementGrave4{
@@ -984,7 +998,7 @@ footer {
 }
 
 footer p{
-    font-size: 19px;
+    font-size: 12px;
     font-family: "medd";
 }
 
@@ -1018,8 +1032,6 @@ footer p{
     padding-right: 122px;
     max-height: 115px;
 }
-
-
 
 
 

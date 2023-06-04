@@ -5,13 +5,13 @@ window.addEventListener('DOMContentLoaded', function()
     let w2 = imgContainer2.offsetWidth;
 
     let img12 = document.createElement('div');
-    img12.style.backgroundImage = "url(./img/posle_slider.jpg)"
+    img12.style.backgroundImage = "url(./img/photo_posle.jpg)"
     img12.className = 'mainImage2';
     imgContainer2.appendChild(img12);
 
     let img2 = document.createElement('div');
     img2.className = 'mainImage2';
-    img2.style.backgroundImage = "url(./img/do_slider.jpg)"
+    img2.style.backgroundImage = "url(./img/photo_do.jpg)"
     img12.style.backgroundSize = img2.style.backgroundSize = `${imgContainer2.offsetWidth}px ${imgContainer2.offsetHeight}px`
     img2.style.width = "50%"
     imgContainer2.appendChild(img2);
