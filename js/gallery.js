@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function()
     galleryButton.className = 'pageBlockOurWorksBlockButton pageBlockOurWorksImageContainer'
     works.appendChild(galleryButton)
     galleryButton.innerText="Больше наших работ"
-    galleryButton.href="#"
+    galleryButton.href="gallery.html"
 
     function getCursorPos(e, obj)
     {

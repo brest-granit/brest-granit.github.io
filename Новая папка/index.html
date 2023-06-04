@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="gallery">
+    <div id="categories">
+      <button class="category-button active" onclick="changeCategory(0)">Категория 1</button>
+      <button class="category-button" onclick="changeCategory(1)">Категория 2</button>
+      <button class="category-button" onclick="changeCategory(2)">Категория 3</button>
+    </div>
+    <div id="image-container">
+      <button id="prev-button" onclick="changeImage(-1)">&lt;</button>
+      <img id="current-image" src="">
+      <button id="next-button" onclick="changeImage(1)">&gt;</button>
+    </div>
+    <div id="modal" onclick="closeModal()">
+      <span id="close-button">&times;</span>
+      <button id="modal-prev-button" onclick="changeModalImage(-1)">&lt;</button>
+      <img id="modal-image" src="">
+      <button id="modal-next-button" onclick="changeModalImage(1)">&gt;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
