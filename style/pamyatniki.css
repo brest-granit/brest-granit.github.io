@@ -512,3 +512,20 @@
   background-color: #d6eaff;
   cursor: pointer;
 }
+
+.pamButtonNavigation2{
+  color: var(--white);
+  font-size: 21px;
+  font-family: 'boldd';
+  background-color: var(--skyblue);
+  border-radius: 15px;
+  transition: 0.15s ease-in-out;
+  padding: 5px 29px;
+  margin: auto;
+}
+
+.pamButtonNavigation2:hover{
+  background-color: #d6eaff;
+  color: var(--skyblue);
+  cursor: pointer;
+}
