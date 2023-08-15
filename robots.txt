@@ -1,0 +1,22 @@
+User-agent: Yandex
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /style/
+Host: www.site.ru
+
+User-agent: Googlebot
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /style/
+Allow: *.css
+Allow: *.js
+
+User-agent: *
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /style/
+
+Sitemap: http://www.tairgranit.by/sitemap.xml
