@@ -298,10 +298,10 @@
 .pageBlockSuggestionElement21{
     width: 100%;
     background-image: url(../img/pesk.png);
-    background-position-x: 340px;
+    background-position-x: 352px;
     background-position-y: 85px;
     background-repeat: no-repeat;
-    background-size: 38%;
+    background-size: 35%;
     background-color: var(--white);
     border-radius: 20px;
     padding: 35px;
@@ -353,9 +353,9 @@
     height: 315px;
     width: 100%;
     max-width: 198px;
-    background-image: url(../img/pamyatniki/pam6.jpg);
-    background-position-x: 11px;
-    background-position-y: 118px;
+    background-image: url(../img/gravestone_dbl.png);
+    background-position-x: 14px;
+    background-position-y: 107px;
     background-repeat: no-repeat;
     background-size: 93%;
     background-color: var(--white);
@@ -364,11 +364,11 @@
 
 .pageBlockSuggestionElementGrave3{
     height: 315px;
-    background-image: url(../img/gravestone.png);
-    background-position-x: 0;
+    background-image: url(../img/pamyatniki/pam6.jpg);
+    background-position-x: 7px;
     background-position-y: 108px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 95%;
     background-color: var(--white);
     padding: 35px;
     border-radius: 0px 20px 20px 0px;
@@ -442,6 +442,27 @@
     margin-bottom: 25px;
     max-width: 320px;
     line-height: 125%;
+}
+
+.pageBlockSuggestionElementTextHud h1{
+    font-family: 'boldd';
+    font-size: 35px;
+    margin-bottom: 15px;
+    line-height: 105%;
+}
+
+.pageBlockSuggestionElementTextHud h2{
+    font-size: 22px;
+    font-family: 'medd';
+    max-width: 295px;
+    line-height: 125%;
+    text-align: justify
+}
+.pageBlockSuggestionElementTextHud h3{
+    font-size: 22px;
+    font-family: 'medd';
+    line-height: 125%;
+    text-align: justify;
 }
 
 .pageBlockSuggestionElementTextGrave {
