@@ -1238,11 +1238,12 @@ footer p{
 
     .mainBannerContentText {
         margin-top: 24px;
+    max-width: 470px;
     }
 
     .mainBannerContent span {
         font-family: 'boldd';
-        font-size: 39px !important;
+        font-size: 43px !important;
         line-height: 45px;
         margin-bottom: 22px;
         letter-spacing: -1px;
@@ -1255,8 +1256,8 @@ footer p{
 
     .mainBannerContent img {
         pointer-events: none;
-        height: 345px;
-        margin-top: 26px;
+        height: 351px;
+        margin-top: 50px;
     }
 
     .headerMenu {
