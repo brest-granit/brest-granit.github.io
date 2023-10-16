@@ -1360,7 +1360,7 @@ footer p{
 
     .pageBlockSuggestionElementText {
         width: 100%;
-        margin-left: 45px;
+        /* margin-left: 45px; */
     }
 
     .pageBlockSuggestionElementText h1 {
@@ -1384,7 +1384,7 @@ display: none;
     }
 
     .pageBlockSuggestionElementSecondDifference {
-        width: 72%;
+        width: auto;
     }
 
     .pageBlockSuggestionElement3Text h2 {
@@ -1778,7 +1778,17 @@ footer p {
 
   }
 
-
+  .pageBlockSuggestionElementSecond2 {
+    display: flex;
+    width: auto;
+    background-position-x: 319px;
+    background-position-y: 94px;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}
   
   .white_text{
     color: white !important;
