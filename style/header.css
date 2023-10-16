@@ -1327,7 +1327,7 @@ display: none;
     }
 
     .pageBlockSuggestionElement3Text h2 {
-        font-size: 26px;
+        font-size: 22px;
         font-family: 'medd';
         margin-bottom: 25px;
         min-width: 350px;
@@ -1620,7 +1620,7 @@ footer p {
 .pageBlockNameDown a {
     font-family: 'boldd';
     padding: 10px;
-    font-size: 50px;
+    font-size: 35px;
 }
   }
 
