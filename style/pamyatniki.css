@@ -742,4 +742,11 @@
   padding: 5px 10px;
 }
 
+.pamBlockElementGalleryRight span {
+  font-size: 27px;
+  font-family: 'boldd';
+  margin-left: 0px;
+  position: absolute;
+  left: 12%;
+}
 }
