@@ -10,6 +10,15 @@
     justify-content: space-between;
 }
 
+.headerBotMobile{
+    display: none;
+}
+
+.headerTopElements{
+    display: flex;
+}
+
+
 .headerSocialINST{
     display: flex;
     align-items: center;
@@ -135,8 +144,24 @@
     position: absolute;
     max-height: 0px;
     transition: 0.5s ease-in-out;
-    overflow: hidden;
+    overflow: hidden; 
     min-width: 100%;
+}
+
+.headerMobileDropdownList{
+    position: absolute;
+    display: none;
+    transition: 0.5s ease-in-out;
+    min-width: 100%;
+}
+
+.headerSubDropdownList{
+    position: absolute;
+    display: none;
+    transition: 0.5s ease-in-out;
+    min-width: 100%;
+    /* transform: translateX(100%); */
+    left: 100%;
 }
 
 .headerDropdownListNoLimit{
@@ -160,8 +185,26 @@
     max-height: 228px;
 }
 
+.headerSubDropdownMenuItemWrapX:hover{
+    background-color: var(--darkgrey);
+}
+
+.headerDropdownMenuItemWrap:hover .headerMobileDropdownList{
+    display: block;
+}
+
 .headerDropdownMenuItemWrapX{
     width: 100%;
+}
+
+.headerSubDropdownMenuItemWrapX{
+    background-color: var(--grey);
+    width: 100%;
+}
+
+.headerDropdownMenuItemWrapX:hover .headerSubDropdownList{
+    display: block;
+
 }
 
 .mainBanner{
@@ -203,6 +246,14 @@
 }
 
 .pageBlockName {
+    display: flex;
+    justify-content: center;
+    padding: 55px 0px;
+    font-size: 44px;
+    font-family: 'boldd';
+}
+
+.pageBlockNameOurWorks {
     display: flex;
     justify-content: center;
     padding: 55px 0px;
@@ -1054,6 +1105,524 @@ footer p{
     max-height: 115px;
 }
 
+@media (orientation: portrait) and (min-width: 700px) {
+    .headerTop {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerLogoLogo {
+        height: 100px;
+    }
+    .headerBotMobile{
+        display: flex;
+    }
+
+    .headerSocialINST{
+        display: none;
+    }
+    
+    .headerBot {
+        display: none;
+    }
+
+    .headerLogo img {
+        pointer-events: none;
+        min-height: 137px;
+    }
+
+    .headerLogoLogo img {
+        max-height: 114px;
+        pointer-events: none;
+        margin-top: 19px;
+    }
+
+    .headerContacts{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .headerLocation {
+        display: flex;
+        min-width: 800px;
+        font-size: 32px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .headerPhone {
+        display: flex;
+        min-width: 450px;
+        font-size: 39px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .headerContactsIconPhone {
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .HeaderPhoneBlock {
+        min-width: 415px;
+        margin-top: 15px;
+    }
+
+    .HeaderPhoneBlock a{
+        padding: 4px;
+    }
+
+
+    .mainBannerContent {
+        display: flex;
+        max-width: 785px;
+        margin: auto;
+    }
+
+    .mainBannerContentText {
+        margin-top: 24px;
+    }
+
+    .mainBannerContent h2 {
+        font-family: 'boldd';
+        font-size: 39px;
+        line-height: 45px;
+        margin-bottom: 22px;
+        letter-spacing: -1px;
+    }
+    .mainBannerContent h1 {
+        font-size: 27px;
+        font-family: 'medd';
+        letter-spacing: -1px;
+    }
+
+    .mainBannerContent img {
+        pointer-events: none;
+        height: 345px;
+        margin-top: 26px;
+    }
+
+    .headerMenu {
+        display: flex;
+        max-width: 1178px;
+        margin-left: 50px;
+        margin-top: -94px;
+    }
+
+    .headerMenuItemWrap a {
+        display: block;
+        padding: 24px 15px;
+        font-family: medd;
+        font-size: 33px;
+        color: rgb(50, 50, 50);
+        white-space: nowrap;
+    }
+
+    .pageBlockName {
+        font-size: 60px;
+    }
+
+    .pageBlockSuggestionElementTextGrave span {
+        font-family: 'boldd';
+        font-size: 43px;
+        line-height: 105%;
+        margin-bottom: 266px;
+        text-align: center;
+    }
+
+    .pageBlockSuggestionElements {
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .pageBlockSuggestionElementGrave4 {
+    display: none;
+    }
+
+    .pageBlockSuggestions {
+        max-width: 900px;
+        /* margin: auto; */
+    }
+
+    .pageBlockSuggestionShadow {
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: var(--white);
+    }
+
+    .pageBlockSuggestionElementGrave1 {
+        height: 315px;
+        max-width: 190px;
+        background-image: url(../img/pamyatniki/pam76.jpg);
+        background-position-x: 0;
+        background-position-y: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px 0px 0px 20px;
+        background-color: var(--white);
+        padding: 35px;
+        margin-right: 40px;
+    }
+
+    .pageBlockSuggestionElementGrave2 {
+        height: 315px;
+        width: 100%;
+        max-width: 155px;
+        background-image: url(../img/gravestone_dbl.png);
+        background-position-x: 14px;
+        background-position-y: 124px;
+        background-repeat: no-repeat;
+        background-size: 93%;
+        background-color: var(--white);
+        padding: 35px;
+    }
+
+    .pageBlockSuggestionElementGrave3 {
+        height: 315px;
+        background-image: url(../img/pamyatniki/pam6.jpg);
+        background-position-x: 7px;
+        background-position-y: 108px;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-color: var(--white);
+        padding: 35px;
+        border-radius: 0px 20px 20px 0px;
+        max-width: 166px;
+        margin-left: 40px;
+    }
+
+    .pageBlockSuggestionElementText {
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .pageBlockSuggestionElementText h1 {
+        font-family: 'boldd';
+        font-size: 43px;
+        margin-bottom: 15px;
+        line-height: 105%;
+    }
+
+    .pageBlockSuggestionElementText h2 {
+        font-size: 25px;
+        font-family: 'medd';
+        margin-bottom: 25px;
+        max-width: 445px;
+        line-height: 125%;
+    }
+
+
+    .pageBlockSuggestionElement2 {
+display: none;
+    }
+
+    .pageBlockSuggestionElementSecondDifference {
+        width: 72%;
+    }
+
+    .pageBlockSuggestionElement3Text h2 {
+        font-size: 26px;
+        font-family: 'medd';
+        margin-bottom: 25px;
+        min-width: 350px;
+        line-height: 125%;
+        margin-right: 30px;
+    }
+
+    .pageBlockAdvantagesElementText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        text-align: justify;
+        line-height: 110%;
+        font-family: 'medd';
+    }
+
+    .pageBlockSuggestionElement3Text h1 {
+        font-family: 'boldd';
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .pageBlockAdvantages {
+        max-width: 700px;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .pageBlockAdvantagesElementTitleSpan {
+        font-size: 50px;
+        font-family: 'boldd';
+        letter-spacing: -1px;
+        line-height: 95%;
+        text-align: center;
+    }
+
+    .pageBlockAdvantagesElement {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .pageBlockAdvantagesElement:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .pageBlockVTBBanner {
+        background-color: var(--white);
+        display: flex;
+        margin: auto;
+        max-width: 850px;
+        border-radius: 30px;
+        transition: .35s ease-in-out;
+    }
+
+    .pageBlockVTBBannerText {
+        margin-left: 58px;
+        margin-right: 0px;
+        padding: 40px 0px;
+    }
+
+    .pageBlockVTBBannerText h1 {
+        color: var(--skyblue);
+        font-size: 62px;
+        font-family: 'boldd';
+        letter-spacing: -1px;
+        margin-bottom: 25px;
+    }
+
+    .pageBlockVTBBannerText h2 {
+        font-size: 27px;
+        font-family: 'medd';
+        max-width: 418px;
+        margin-bottom: 30px;
+    }
+
+    .pageBlockVTBBannerText h3 {
+        display: none;
+    }
+
+    .pageBlockVTBBannerCard {
+        padding: 100px 0px;
+        overflow: hidden;
+    }
+
+    .pageBlockVTBBannerCard img {
+        pointer-events: none;
+        transform: rotate(353deg);
+        width: 285px;
+        transition: 0.635s ease-in-out;
+        transition-delay: 0.135s;
+    }
+
+    .pageBlockReview {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 0px;
+        max-width: 820px;
+        margin: auto;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .pageBlockReviewElement2 {
+        display: none;
+    }
+
+    .pageBlockReviewElement3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 25px 0px;
+    }
+
+    .pageBlockReviewElement1 h1 {
+        font-size: 30px;
+        font-family: 'boldd';
+        letter-spacing: -1px;
+        background-color: white;
+        padding: 3px 10px 3px 10px;
+        border-radius: 15px;
+        margin: 0px 0px 0px 12px;
+    }
+
+    .pageBlockReviewElementTitleCity h3 {
+        font-size: 30px;
+        font-family: 'medd';
+        color: var(--greygrey);
+        padding: 0px;
+    }
+
+    .pageBlockReviewElement1 h2 {
+        font-size: 29px;
+        max-width: 400px;
+        line-height: 116%;
+        display: flex;
+        background-color: white;
+        padding: 15px 17px 15px 18px;
+        border-radius: 20px;
+        margin: 12px 0px 0px 0px;
+        text-align: justify;
+        font-family: 'medd';
+    }
+
+    .pageBlockReviewElement3 h1 {
+        font-size: 30px;
+        font-family: 'boldd';
+        letter-spacing: -1px;
+        background-color: white;
+        padding: 3px 10px 3px 10px;
+        border-radius: 15px;
+        margin: 0px 0px 0px 12px;
+        white-space: nowrap;
+    }
+
+    .pageBlockReviewElement3 h2 {
+        font-size: 29px;
+        max-width: 400px;
+        line-height: 116%;
+        display: flex;
+        background-color: white;
+        padding: 15px 17px 15px 18px;
+        border-radius: 20px;
+        margin: 12px 0px 0px 0px;
+        text-align: justify;
+        font-family: 'medd';
+    }
+
+
+
+    .pageBlockNameOurWorks {
+        display: none;
+    }
+
+    .mainImageContainer {
+        display: none;
+    }
+
+    .pageBlockLocation {
+        display: flex;
+        margin: auto;
+        max-width: 900px;
+        margin-top: 33px;
+        margin-bottom: 100px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pageBlockLocationMap {
+        width: 900px;
+        height: 650px;
+    }
+
+    .pageBlockLocationContacts {
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .pageBlockUpperFooterContent {
+        display: flex;
+        margin: auto;
+        width: 700px;
+        overflow: hidden;
+    }
+
+    .pageBlockUpperFooterContentLogo img {
+        pointer-events: none;
+        padding-right: 0px;
+        max-height: 160px;
+    }
+
+    .pageBlockUpperFooterSiteMapElement{
+        display: none;
+    }
+
+    .pageBlockLocationContantsLogo {
+        height: 85px;
+        min-width: 85px;
+        background-color: var(--skyblue);
+        border-radius: 272px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pageBlockLocationContantsTitle h1 {
+        font-size: 34px;
+        margin-left: 30px;
+        width: 230px;
+        font-family: 'medd';
+    }
+
+    .pageBlockLocationContantsTitle h2 {
+        font-size: 35px;
+        max-width: 390px;
+        min-width: 0px;
+        margin-left: 28px;
+        font-family: 'medd';
+        color: black;
+    }
+
+    .pageBlockLocationContantsLogo {
+        height: 85px;
+        min-width: 85px;
+        background-color: var(--skyblue);
+        border-radius: 272px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back_to_top svg {
+        padding: 10px;
+        fill: var(--skyblue);
+        height: 75px;
+        width: 75px;
+        transition: 0.3s;
+    }
+
+    .pageBlockUpperFooterTimeTitleText h1 {
+        font-size: 43px;
+        font-family: 'medd';
+        margin-left: 10px;
+    }
+
+.pageBlockUpperFooterTimeTitleElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 320px;
+    font-size: 29px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: "medd";
+}
+
+.pageBlockLocationContantsLogo svg{
+    width: 40px;
+    height: 40px;
+}
+
+.HeaderPhoneBlock svg{
+    width: 40px;
+    height: 40px;
+}
+
+.pageBlockNameDown a {
+    font-family: 'boldd';
+    padding: 10px;
+    font-size: 50px;
+}
+  }
 
 
 
