@@ -295,6 +295,16 @@
     margin-bottom: 20px;
 }
 
+.pageBlockSuggestionElementsSecondXX{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pageBlockSuggestionElementsSecondXXX{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .pageBlockSuggestionElementSecond1{
     width: 100%;
     background-image: url(../img/gravestone.png);
@@ -346,7 +356,33 @@
     margin-right: 20px;
 }
 
+.pageBlockSuggestionElement2X{
+    width: 100%;
+    background-image: url(../img/ogrady.png);
+    background-position-x: 321px;
+    background-position-y: 82px;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+}
+
 .pageBlockSuggestionElement21{
+    width: 100%;
+    background-image: url(../img/pesk.png);
+    background-position-x: 352px;
+    background-position-y: 85px;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+}
+
+.pageBlockSuggestionElement21XXX{
     width: 100%;
     background-image: url(../img/pesk.png);
     background-position-x: 352px;
@@ -1105,6 +1141,18 @@ footer p{
     max-height: 115px;
 }
 
+.pageBlockSuggestionElementSecond223 {
+    width: 100%;
+    background-image: url(../img/ogrady-iz-nerzhavejki.png);
+    background-position-x: 331px;
+    background-position-y: 82px;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}
+
 @media (orientation: portrait) and (min-width: 700px) {
     .headerTop {
         max-width: 700px;
@@ -1224,6 +1272,11 @@ footer p{
 
     .pageBlockName {
         font-size: 60px;
+        display: flex;
+    justify-content: center;
+    padding: 55px 0px;
+    font-family: 'boldd';
+    text-align: center;
     }
 
     .pageBlockSuggestionElementTextGrave span {
@@ -1622,6 +1675,101 @@ footer p {
     padding: 10px;
     font-size: 35px;
 }
+
+.pageBlockSuggestionElement2X {
+    width: 830px;
+    background-image: url(../img/ogrady.png);
+    background-position-x: 522px;
+    background-position-y: 39px;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pageBlockSuggestionElementSecond223 {
+    width: 830px;
+    background-image: url(../img/ogrady-iz-nerzhavejki.png);
+    background-position-x: 515px;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.pageBlockSuggestionElementsSecond {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.pageBlockSuggestionElementsSecondXX{
+    display: flex;
+    margin-bottom: 20px;
+}
+.pageBlockSuggestionElementsSecondXXX{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.pageBlockSuggestionElement21 {
+    width: 830px;
+    background-image: url(../img/pesk.png);
+    background-position-x: 352px;
+    background-position-y: 85px;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pageBlockSuggestionElement21XXX {
+    width: 830px;
+    background-image: url(../img/pesk.png);
+    background-position-x: 553px;
+    background-position-y: 106px;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.pageBlockSuggestionElementTextHud h2 {
+    font-size: 35px;
+    font-family: 'medd';
+    max-width: 500px;
+    line-height: 125%;
+    text-align: justify;
+}
+
+.pageBlockSuggestionElementTextHud h3 {
+    font-size: 35px;
+    font-family: 'medd';
+    line-height: 125%;
+    text-align: justify;
+}
+
+.pageBlockSuggestionElementTextHud h1 {
+    font-family: 'boldd';
+    font-size: 51px;
+    margin-bottom: 15px;
+    line-height: 105%;
+}
+
+
+
   }
 
 
