@@ -1372,10 +1372,10 @@ footer p{
     }
 
     .pageBlockSuggestionElementText h2 {
-        font-size: 25px;
+        font-size: 32px;
         font-family: 'medd';
         margin-bottom: 25px;
-        max-width: 445px;
+        max-width: 505px;
         line-height: 125%;
     }
 
@@ -1389,7 +1389,7 @@ display: none;
     }
 
     .pageBlockSuggestionElement3Text h2 {
-        font-size: 22px !important;
+        font-size: 31px !important;
         font-family: 'medd';
         margin-bottom: 25px;
         min-width: 350px;
