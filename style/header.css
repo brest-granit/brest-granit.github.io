@@ -226,11 +226,11 @@
 }
 
 .mainBannerContentText {
-    margin-top: 165px;
+    margin-top: 145px;
     padding: 0px 20px;
 }
 
-.mainBannerContent h2 {
+.mainBannerContent span {
     font-family: 'boldd';
     font-size: 43px;
     line-height: 52px;
@@ -1240,15 +1240,15 @@ footer p{
         margin-top: 24px;
     }
 
-    .mainBannerContent h2 {
+    .mainBannerContent span {
         font-family: 'boldd';
-        font-size: 39px;
+        font-size: 39px !important;
         line-height: 45px;
         margin-bottom: 22px;
         letter-spacing: -1px;
     }
     .mainBannerContent h1 {
-        font-size: 27px;
+        font-size: 27px !important;
         font-family: 'medd';
         letter-spacing: -1px;
     }
@@ -1388,7 +1388,7 @@ display: none;
     }
 
     .pageBlockSuggestionElement3Text h2 {
-        font-size: 22px;
+        font-size: 22px !important;
         font-family: 'medd';
         margin-bottom: 25px;
         min-width: 350px;
