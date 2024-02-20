@@ -8,7 +8,12 @@ var categories = [
     'img/photo_rabot/retush (6).png',
     'img/photo_rabot/retush (7).png',
     'img/photo_rabot/retush (8).png',
-    'img/photo_rabot/retush (9).png'
+    'img/photo_rabot/retush (9).png',
+    'img/photo_rabot/retush (10).jpg',
+    'img/photo_rabot/retush (11).jpg',
+    'img/photo_rabot/retush (12).jpg',
+    'img/photo_rabot/retush (13).jpg',
+    'img/photo_rabot/retush (14).jpg'
   ],
   [
 
